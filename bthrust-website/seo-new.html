@@ -1,0 +1,4298 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico" />
+    <link rel="shortcut icon" href="assets/img/favicon.png" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bthrust Malaysia</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css"
+    />
+    <!-- Owl Carousel -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"
+    />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <style>
+      .cta-img {
+        margin-top: 20px;
+        margin-bottom: 20px;
+        height: 300px;
+      }
+
+      .talk-card-outer-circle {
+        height: 240px;
+        width: 240px;
+        /* background-color: #c3dafd; */
+        background: linear-gradient(to top, #fafafc, #a4c7fc);
+
+        border-radius: 50%;
+        bottom: -24%;
+        right: -17%;
+        position: absolute;
+        z-index: 1; /* base */
+      }
+
+      .talk-card-hover-outer-circle {
+        height: 240px;
+        width: 240px;
+        /* background-color: #98c1ff; */
+        background: linear-gradient(to top, #c0d9fd, #8db9fa);
+
+        border-radius: 50%;
+        bottom: -24%;
+        right: -17%;
+        position: absolute;
+        z-index: 2; /* sits above outer-circle */
+        transform: translateY(100%);
+        transition: transform 0.6s ease-in-out;
+      }
+
+      .talk-card-bg:hover .talk-card-hover-outer-circle {
+        transform: translateY(0); /* slide up inside outer-circle */
+      }
+
+      .talk-card-inner-circle {
+        height: 200px;
+        width: 200px;
+        /* background-color:#b4d1fd; */
+        background: linear-gradient(to right, #dfe9fa, #c3dbff);
+        border-radius: 50%;
+        bottom: 0%;
+        right: -20%;
+        position: absolute;
+        z-index: 0; /* stays behind everything */
+      }
+
+      .talk-card-hover-inner-circle {
+        height: 200px;
+        width: 200px;
+        background-color: #b6d3fd;
+        border-radius: 50%;
+        bottom: 0%;
+        right: -20%;
+        position: absolute;
+        z-index: 0; /* sits above outer-circle */
+        transform: translateY(100%);
+        transition: transform 0.6s ease-in-out;
+      }
+      .talk-card-bg:hover .talk-card-hover-inner-circle {
+        transform: translateY(0); /* slide up inside outer-circle */
+      }
+
+      .talk-icon,
+      .talk-card-bg-title,
+      .talk-link-card-clamp-text {
+        position: relative;
+        z-index: 3; /* always on top of circles */
+      }
+
+      .our-service .talk-icon i {
+        border: 2px solid transparent;
+        border-radius: 50%;
+        background: linear-gradient(white, white) padding-box,
+          /* linear-gradient(90deg, rgb(10, 164, 202), rgb(110, 120, 179)) */
+            linear-gradient(90deg, #84a9e4, #164b9e) border-box;
+        padding: 20px;
+      }
+    </style>
+  </head>
+
+  <body>
+    <!-- Header Section -->
+    <section class="top-strip py-2">
+      <div class="container">
+        <div class="row">
+          <div class="col-sm-6 text-sm-start text-center">
+            <div class="enquiry-links">
+              <a href="mailto:sales@bthrust.com"
+                ><i class="fa fa-envelope me-2" aria-hidden="true"></i>
+                sales@bthrust.com</a
+              >
+            </div>
+          </div>
+          <div class="col-sm-6 text-sm-end text-center">
+            <div class="enquiry-links">
+              <a href="tel:+6568343026"
+                ><i class="fa fa-phone me-2" aria-hidden="true"></i>+65 6834
+                3026</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <header class="header">
+      <div class="container">
+        <div class="main-header">
+          <div class="logo">
+            <a href="index.html">
+              <img
+                src="assets/img/bthrust-logo.png"
+                alt="BTthrust Logo"
+                class="img-fluid"
+              />
+            </a>
+          </div>
+          <div class="d-flex align-items-center">
+            <nav class="nav">
+              <ul>
+                <li><a href="index.html">Home</a></li>
+                <li class="active"><a href="seo.html">SEO</a></li>
+                <li><a href="e-commerce.html">E-commerce</a></li>
+                <li>
+                  <a href="mobile-application-development.html">Mobile App</a>
+                </li>
+                <li><a href="#">Software</a></li>
+                <li><a href="#">FSM</a></li>
+                <li><a href="#">DMS</a></li>
+              </ul>
+              <div class="toggle-bars">
+                <i class="fa fa-bars"></i>
+                <i class="fa fa-close"></i>
+              </div>
+            </nav>
+            <div class="cta">
+              <a href="#" class="btn"
+                >Get a Quote <i class="fa fa-chevron-right"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <!-- banner section -->
+    <section class="pages-banner">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 text-lg-start text-center my-auto">
+            <div class="hero-content">
+              <h5>SEO Singapore</h5>
+              <h1>
+                <span class="highlighted">#1 Top</span> SEO Service Agency in
+                <span class="highlighted position-relative"
+                  >Singapore
+                  <img
+                    class="under-singapore img-fluid"
+                    src="./assets/img/it-software-underline.png"
+                    alt="img"
+                  />
+                </span>
+              </h1>
+              <p>
+                BThrust as a leading SEO company in Singapore, go one step
+                forward to serve and assist clients in achieving top rankings in
+                Google SERPs and potential customers.
+              </p>
+              <div class="cta">
+                <a href="#" class="btn"
+                  >Get Started Today <i class="fa fa-chevron-right"></i
+                ></a>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="text-center py-4">
+              <img src="assets/img/1.png" alt="img" class="img-fluid" />
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Measure Your Site Performance -->
+    <div class="container banner-overlap">
+      <div class="measure-performance">
+        <div class="check-performance text-center">
+          <h2 class="text-white">Measure Your Site Performance</h2>
+          <form action="">
+            <input
+              type="text"
+              class="form-control"
+              id="exampleFormControlInput1"
+              placeholder="Enter your website URL to get started"
+            />
+            <button class="check-btn">
+              <i class="fa fa-chevron-right"></i>
+            </button>
+          </form>
+        </div>
+      </div>
+    </div>
+    <!-- Measure Your Site Performance -->
+
+    <!-- Partner With The Highest Rated SEO Agency In Singapore -->
+    <section class="py-5 highest-rated-seo">
+      <div class="container">
+        <div class="row">
+          <div class="col-12">
+            <div class="section-title text-center">
+              <h2>Partner With The Highest Rated SEO Agency In Singapore</h2>
+              <p>
+                Take your online presence to the next level with our best SEO
+                strategy of the year. As the top-rated SEO agency in Singapore,
+                we have been recognized for our exceptional results.
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Partner With The Highest Rated SEO Agency In Singapore -->
+
+    <!-- OFF PAGE OPTIMIZATION -->
+    <section class="pb-5">
+      <div class="container">
+        <!-- <div>
+                <h2>SEO Singapore
+                    At A Glance</h2>
+            </div> -->
+        <div class="row">
+          <div class="row">
+            <div class="col-lg-4">
+              <!-- Nav tabs -->
+              <div class="seo-tabs">
+                <h2>SEO Singapore At A Glance</h2>
+                <ul class="nav nav-tabs flex-column" id="myTab" role="tablist">
+                  <li class="nav-item" role="presentation">
+                    <a
+                      class="nav-link active"
+                      id="home-tab"
+                      data-bs-toggle="tab"
+                      href="#home-v"
+                      role="tab"
+                      aria-controls="home-v"
+                      aria-selected="true"
+                      >About SEO</a
+                    >
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a
+                      class="nav-link"
+                      id="profile-tab"
+                      data-bs-toggle="tab"
+                      href="#profile-v"
+                      role="tab"
+                      aria-controls="profile-v"
+                      aria-selected="false"
+                      >Methodology</a
+                    >
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a
+                      class="nav-link"
+                      id="messages-tab"
+                      data-bs-toggle="tab"
+                      href="#messages-v"
+                      role="tab"
+                      aria-controls="messages-v"
+                      aria-selected="false"
+                      >On Page Optimization</a
+                    >
+                  </li>
+                  <li class="nav-item" role="presentation">
+                    <a
+                      class="nav-link"
+                      id="settings-tab"
+                      data-bs-toggle="tab"
+                      href="#settings-v"
+                      role="tab"
+                      aria-controls="settings-v"
+                      aria-selected="false"
+                      >Off Page Optimization</a
+                    >
+                  </li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="col-lg-8 mt-lg-0 mt-4">
+              <!-- Tab panes -->
+              <div class="tab-content" id="myTabContent">
+                <div
+                  class="tab-pane fade show active"
+                  id="home-v"
+                  role="tabpanel"
+                  aria-labelledby="home-tab"
+                >
+                  <div class="section-subtitle">
+                    <h2>About SEO</h2>
+                    <p>
+                      Especially for SEO services in Singapore, we undergo all
+                      measures to ensure no changes in your website are made
+                      while we improve your position in the search engine result
+                      page. Here the main focus is to develop as many quality
+                      links. Below is a list of some common off-page activities:
+                      -
+                    </p>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <ul>
+                        <li>
+                          <span class="text-green-500 me-2">✓</span>Question -
+                          Answering
+                        </li>
+                        <li>
+                          <span class="text-green-500 me-2">✓</span>Blog
+                          Submissions
+                        </li>
+                        <li>
+                          <span class="text-green-500 me-2">✓</span>Infographic
+                          Submissions
+                        </li>
+                        <li>
+                          <span class="text-green-500 me-2">✓</span>Article
+                          Submissions
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-6">
+                      <ul>
+                        <li>
+                          <span class="text-green-500 me-2">✓</span>Local
+                          Listing
+                        </li>
+                        <li>
+                          <span class="text-green-500 me-2">✓</span>Classifieds
+                        </li>
+                        <li>
+                          <span class="text-green-500 me-2">✓</span>Guest Post
+                        </li>
+                        <li>
+                          <span class="text-green-500 me-2">✓</span>Many More...
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+
+                <div
+                  class="tab-pane fade"
+                  id="profile-v"
+                  role="tabpanel"
+                  aria-labelledby="profile-tab"
+                >
+                  <div class="section-subtitle">
+                    <h2>Methodology</h2>
+                    <p>
+                      Especially for SEO services in Singapore, we undergo all
+                      measures to ensure no changes in your website are made
+                      while we improve your position in the search engine result
+                      page. Here the main focus is to develop as many quality
+                      links. Below is a list of some common off-page activities:
+                      -
+                    </p>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <ul>
+                        <li>
+                          <span class="text-green-500 me-2">✓</span>Question -
+                          Answering
+                        </li>
+                        <li>
+                          <span class="text-green-500 me-2">✓</span>Blog
+                          Submissions
+                        </li>
+                        <li>
+                          <span class="text-green-500 me-2">✓</span>Infographic
+                          Submissions
+                        </li>
+                        <li>
+                          <span class="text-green-500 me-2">✓</span>Article
+                          Submissions
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-6">
+                      <ul>
+                        <li>
+                          <span class="text-green-500 me-2">✓</span>Local
+                          Listing
+                        </li>
+                        <li>
+                          <span class="text-green-500 me-2">✓</span>Classifieds
+                        </li>
+                        <li>
+                          <span class="text-green-500 me-2">✓</span>Guest Post
+                        </li>
+                        <li>
+                          <span class="text-green-500 me-2">✓</span>Many More...
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="messages-v"
+                  role="tabpanel"
+                  aria-labelledby="messages-tab"
+                >
+                  <div class="section-subtitle">
+                    <h2>On Page Optimization</h2>
+                    <p>
+                      Especially for SEO services in Singapore, we undergo all
+                      measures to ensure no changes in your website are made
+                      while we improve your position in the search engine result
+                      page. Here the main focus is to develop as many quality
+                      links. Below is a list of some common off-page activities:
+                      -
+                    </p>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <ul>
+                        <li>
+                          <span class="text-green-500 me-2">✓</span>Question -
+                          Answering
+                        </li>
+                        <li>
+                          <span class="text-green-500 me-2">✓</span>Blog
+                          Submissions
+                        </li>
+                        <li>
+                          <span class="text-green-500 me-2">✓</span>Infographic
+                          Submissions
+                        </li>
+                        <li>
+                          <span class="text-green-500 me-2">✓</span>Article
+                          Submissions
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-6">
+                      <ul>
+                        <li>
+                          <span class="text-green-500 me-2">✓</span>Local
+                          Listing
+                        </li>
+                        <li>
+                          <span class="text-green-500 me-2">✓</span>Classifieds
+                        </li>
+                        <li>
+                          <span class="text-green-500 me-2">✓</span>Guest Post
+                        </li>
+                        <li>
+                          <span class="text-green-500 me-2">✓</span>Many More...
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+                <div
+                  class="tab-pane fade"
+                  id="settings-v"
+                  role="tabpanel"
+                  aria-labelledby="settings-tab"
+                >
+                  <div class="section-subtitle">
+                    <h2>Off Page Optimization</h2>
+                    <p>
+                      Especially for SEO services in Singapore, we undergo all
+                      measures to ensure no changes in your website are made
+                      while we improve your position in the search engine result
+                      page. Here the main focus is to develop as many quality
+                      links. Below is a list of some common off-page activities:
+                      -
+                    </p>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <ul>
+                        <li>
+                          <span class="text-green-500 me-2">✓</span>Question -
+                          Answering
+                        </li>
+                        <li>
+                          <span class="text-green-500 me-2">✓</span>Blog
+                          Submissions
+                        </li>
+                        <li>
+                          <span class="text-green-500 me-2">✓</span>Infographic
+                          Submissions
+                        </li>
+                        <li>
+                          <span class="text-green-500 me-2">✓</span>Article
+                          Submissions
+                        </li>
+                      </ul>
+                    </div>
+                    <div class="col-sm-6">
+                      <ul>
+                        <li>
+                          <span class="text-green-500 me-2">✓</span>Local
+                          Listing
+                        </li>
+                        <li>
+                          <span class="text-green-500 me-2">✓</span>Classifieds
+                        </li>
+                        <li>
+                          <span class="text-green-500 me-2">✓</span>Guest Post
+                        </li>
+                        <li>
+                          <span class="text-green-500 me-2">✓</span>Many More...
+                        </li>
+                      </ul>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- OFF PAGE OPTIMIZATION -->
+
+    <!-- Professional SEO Service For Long Term GrowthN -->
+
+    <section
+      class="py-5 seo-service overflow-hidden position-relative"
+      style="background: linear-gradient(135deg, #f4f6fc, #eaf1fb)"
+    >
+      <!-- <img
+        src="assets\img\new-seo-star-ecolored_icon.png"
+        class="position-absolute"
+        style="
+          left: -80px;
+          top: 70px;
+          height: 300px;
+          width: 300px;
+          opacity: 0.3;
+        "
+        alt=""
+      /> -->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+            <div class="section-title">
+              <h5 class="highlighted">ABOUT US</h5>
+              <h2 class="mb-4">
+                Professional SEO Service For Long Term Growth
+              </h2>
+              <h6>
+                BThrust Proven SEO Techniques for #1st Page Google SERP Ranking
+              </h6>
+              <p>
+                From content creation to your link building strategy, we deliver
+                a complete SEO service that guarantees results.
+              </p>
+              <p class="col-lg-7 mx-auto col-">
+                At every stage, we clearly outline what we're doing, why we're
+                doing it, and the outcomes we hope to achieve. We openly
+                disclose the entire procedure so that you know how we get
+                traffic.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-12">
+            <div class="gtco-testimonials our-service-card">
+              <!-- <div
+                class="owl-carousel owl-carousel-seo owl-theme owl-loaded owl-drag"
+              > -->
+              <!-- <div class="owl-stage-outer"> -->
+              <!-- <div class="owl-stage"> -->
+              <!-- <div class="owl-item cloned"> -->
+              <div class="our-service">
+                <div class="row">
+                  <div class="col-12 col-sm-6 col-lg-4 my-4 px-4">
+                    <div
+                      class="position-relative border-1 talk-card-bg text-center py-4 px-4"
+                    >
+                      <div
+                        class="position-absolute talk-card-outer-circle"
+                      ></div>
+                      <div
+                        class="position-absolute talk-card-hover-outer-circle"
+                      ></div>
+                      <div
+                        class="position-absolute talk-card-inner-circle"
+                      ></div>
+                      <div
+                        class="position-absolute talk-card-hover-inner-circle"
+                      ></div>
+                      <!-- Content -->
+                      <div class="talk-icon">
+                        <i class="fa fa-server fa-2x"></i>
+                      </div>
+                      <h4 class="talk-card-bg-title">Local SEO Services</h4>
+                      <p class="talk-link-card-clamp-text">
+                        Our SEO experts always adopt an ethical and sustainable
+                        approach at eSearch Logix. They practice strict white
+                        hat SEO with a focus on the long-term rankings rather
+                        than short-term manipulations. From authoritative
+                        link-building to content-led optimization, our SEO
+                        services are compliant with Google's guidelines on every
+                        level, ensuring high visibility for your site without
+                        the threat of Google penalties.
+                      </p>
+                    </div>
+                  </div>
+
+                  <div class="col-12 col-sm-6 col-lg-4 my-3 px-4">
+                    <div
+                      class="position-relative talk-card-bg text-center py-4 px-4"
+                    >
+                      <div
+                        class="position-absolute talk-card-outer-circle"
+                      ></div>
+                      <div
+                        class="position-absolute talk-card-hover-outer-circle"
+                      ></div>
+                      <div
+                        class="position-absolute talk-card-inner-circle"
+                      ></div>
+                      <div
+                        class="position-absolute talk-card-hover-inner-circle"
+                      ></div>
+                      <div class="talk-icon">
+                        <i class="fa fa-search"></i>
+                      </div>
+                      <h4 class="talk-card-bg-title">Link Building Services</h4>
+                      <p class="talk-link-card-clamp-text">
+                        Our SEO experts always adopt an ethical and sustainable
+                        approach at eSearch Logix. They practice strict white
+                        hat SEO with a focus on the long-term rankings rather
+                        than short-term manipulations. From authoritative
+                        link-building to content-led optimization, our SEO
+                        services are compliant with Google's guidelines on every
+                        level, ensuring high visibility for your site without
+                        the threat of Google penalties.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 my-3 px-4">
+                    <div
+                      class="position-relative talk-card-bg text-center py-4 px-4"
+                    >
+                      <div
+                        class="position-absolute talk-card-outer-circle"
+                      ></div>
+                      <div
+                        class="position-absolute talk-card-hover-outer-circle"
+                      ></div>
+                      <div
+                        class="position-absolute talk-card-inner-circle"
+                      ></div>
+                      <div
+                        class="position-absolute talk-card-hover-inner-circle"
+                      ></div>
+                      <div class="talk-icon">
+                        <i class="fa fa-eye"></i>
+                      </div>
+                      <h4 class="talk-card-bg-title">Technical SEO Services</h4>
+                      <p class="talk-link-card-clamp-text">
+                        SEO is never a one-size-fits-all, and eSearch Logix
+                        knows it best. Our highly customized SEO plans consider
+                        your business objectives, industry, target audience, and
+                        competition. Whether a startup is building visibility or
+                        an enterprise is scaling in more competitive markets, we
+                        design strategy-driven SEO roadmaps for your specific
+                        problems and challenges.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 my-3 px-4">
+                    <div
+                      class="position-relative talk-card-bg text-center py-4 px-4"
+                    >
+                      <div
+                        class="position-absolute talk-card-outer-circle"
+                      ></div>
+                      <div
+                        class="position-absolute talk-card-hover-outer-circle"
+                      ></div>
+                      <div
+                        class="position-absolute talk-card-inner-circle"
+                      ></div>
+                      <div
+                        class="position-absolute talk-card-hover-inner-circle"
+                      ></div>
+                      <div class="talk-icon">
+                        <i class="fa fa-comment"></i>
+                      </div>
+                      <h4 class="talk-card-bg-title">E-commerce SEO</h4>
+                      <p class="talk-link-card-clamp-text">
+                        eSearch Logix empowers campaigns in SEO with the
+                        complete suite of cutting-edge tools, blended with AI
+                        and automation. This makes our customized SEO services
+                        smarter and more efficient. From AI-based keyword
+                        forecasting to predictive analytics and automated
+                        audits, it'll cover every SEO task with data-driven
+                        accuracy. These solutions will provide your brand with
+                        an edge over others in the market
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 my-3 px-4">
+                    <div
+                      class="position-relative talk-card-bg text-center py-4 px-4"
+                    >
+                      <div
+                        class="position-absolute talk-card-outer-circle"
+                      ></div>
+                      <div
+                        class="position-absolute talk-card-hover-outer-circle"
+                      ></div>
+                      <div
+                        class="position-absolute talk-card-inner-circle"
+                      ></div>
+                      <div
+                        class="position-absolute talk-card-hover-inner-circle"
+                      ></div>
+                      <div class="talk-icon">
+                        <i class="fa fa-rocket"></i>
+                      </div>
+                      <h4 class="talk-card-bg-title">Shopify SEO</h4>
+                      <p class="talk-link-card-clamp-text">
+                        Unlike those outsourcing the work to several sources,
+                        eSearch Logix has dedicated in-house SEO experts,
+                        content strategists, developers, designers, and data
+                        analysts. This translates to better communication,
+                        responsibility, and faster turnaround time within
+                        projects of all respective deliverables. Every project
+                        is handled to perfection with the help of dedicated
+                        teams who know your business inside out.
+                      </p>
+                    </div>
+                  </div>
+                  <div class="col-12 col-sm-6 col-lg-4 my-3 px-4">
+                    <div
+                      class="position-relative talk-card-bg text-center py-4 px-4"
+                    >
+                      <div
+                        class="position-absolute talk-card-outer-circle"
+                      ></div>
+                      <div
+                        class="position-absolute talk-card-hover-outer-circle"
+                      ></div>
+                      <div
+                        class="position-absolute talk-card-inner-circle"
+                      ></div>
+                      <div
+                        class="position-absolute talk-card-hover-inner-circle"
+                      ></div>
+                      <div class="talk-icon">
+                        <i class="fa fa-database"></i>
+                      </div>
+                      <h4 class="talk-card-bg-title">International SEO</h4>
+                      <p class="talk-link-card-clamp-text">
+                        The essence of SEO is far more than mere ranking; it is
+                        sustainable growth. eSearch Logix builds strategies for
+                        organic visibility, website traffic quality, conversion
+                        rates, and user engagement that improve with consistency
+                        over a long period. Their target is not a short-lived
+                        surge; instead, they construct a solid SEO foundation
+                        that sees your brand flourish for years.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- </div> -->
+              <!-- </div> -->
+              <!-- </div> -->
+              <!-- </div> -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Professional SEO Service For Long Term Growth -->
+
+    <section class="py-5 d-none">
+      <div class="container">
+        <div class="brands-section">
+          <div class="row mb-4 mt-2">
+            <div
+              class="col-lg-3 d-flex flex-column justify-content-center align-items-start"
+            >
+              <div class="brands-title">300+</div>
+              <div class="brands-subtitle">Brands already onboard</div>
+            </div>
+            <div class="col-lg-9">
+              <div class="row g-4">
+                <!-- Repeat this column for each logo -->
+                <div class="col-4 col-sm-3 col-md-2 text-center">
+                  <img
+                    src="assets/img/clients-logo/cgr-1.png"
+                    class="img-fluid logo-img"
+                    alt="Levi's"
+                  />
+                </div>
+                <div class="col-4 col-sm-3 col-md-2 text-center">
+                  <img
+                    src="assets/img/clients-logo/bridgeman.png"
+                    class="img-fluid logo-img"
+                    alt="Home2U"
+                  />
+                </div>
+                <div class="col-4 col-sm-3 col-md-2 text-center">
+                  <img
+                    src="assets/img/clients-logo/alpha_automation_01.png"
+                    class="img-fluid logo-img"
+                    alt="Henkel"
+                  />
+                </div>
+                <div class="col-4 col-sm-3 col-md-2 text-center">
+                  <img
+                    src="assets/img/clients-logo/air-vanture.png"
+                    class="img-fluid logo-img"
+                    alt="Philips"
+                  />
+                </div>
+                <div class="col-4 col-sm-3 col-md-2 text-center">
+                  <img
+                    src="assets/img/clients-logo/cgr-1.png"
+                    class="img-fluid logo-img"
+                    alt="Vedra"
+                  />
+                </div>
+                <div class="col-4 col-sm-3 col-md-2 text-center">
+                  <img
+                    src="assets/img/clients-logo/air-vanture.png"
+                    class="img-fluid logo-img"
+                    alt="Reputation"
+                  />
+                </div>
+                <div class="col-4 col-sm-3 col-md-2 text-center">
+                  <img
+                    src="assets/img/clients-logo/cgr-1.png"
+                    class="img-fluid logo-img"
+                    alt="Levi's"
+                  />
+                </div>
+                <div class="col-4 col-sm-3 col-md-2 text-center">
+                  <img
+                    src="assets/img/clients-logo/bridgeman.png"
+                    class="img-fluid logo-img"
+                    alt="Home2U"
+                  />
+                </div>
+                <div class="col-4 col-sm-3 col-md-2 text-center">
+                  <img
+                    src="assets/img/clients-logo/alpha_automation_01.png"
+                    class="img-fluid logo-img"
+                    alt="Henkel"
+                  />
+                </div>
+                <div class="col-4 col-sm-3 col-md-2 text-center">
+                  <img
+                    src="assets/img/clients-logo/air-vanture.png"
+                    class="img-fluid logo-img"
+                    alt="Philips"
+                  />
+                </div>
+                <div class="col-4 col-sm-3 col-md-2 text-center">
+                  <img
+                    src="assets/img/clients-logo/cgr-1.png"
+                    class="img-fluid logo-img"
+                    alt="Vedra"
+                  />
+                </div>
+                <div class="col-4 col-sm-3 col-md-2 text-center">
+                  <img
+                    src="assets/img/clients-logo/air-vanture.png"
+                    class="img-fluid logo-img"
+                    alt="Reputation"
+                  />
+                </div>
+                <div class="col-4 col-sm-3 col-md-2 text-center">
+                  <img
+                    src="assets/img/clients-logo/cgr-1.png"
+                    class="img-fluid logo-img"
+                    alt="Levi's"
+                  />
+                </div>
+                <div class="col-4 col-sm-3 col-md-2 text-center">
+                  <img
+                    src="assets/img/clients-logo/bridgeman.png"
+                    class="img-fluid logo-img"
+                    alt="Home2U"
+                  />
+                </div>
+                <div class="col-4 col-sm-3 col-md-2 text-center">
+                  <img
+                    src="assets/img/clients-logo/alpha_automation_01.png"
+                    class="img-fluid logo-img"
+                    alt="Henkel"
+                  />
+                </div>
+                <div class="col-4 col-sm-3 col-md-2 text-center">
+                  <img
+                    src="assets/img/clients-logo/air-vanture.png"
+                    class="img-fluid logo-img"
+                    alt="Philips"
+                  />
+                </div>
+                <div class="col-4 col-sm-3 col-md-2 text-center">
+                  <img
+                    src="assets/img/clients-logo/cgr-1.png"
+                    class="img-fluid logo-img"
+                    alt="Vedra"
+                  />
+                </div>
+                <div class="col-4 col-sm-3 col-md-2 text-center">
+                  <img
+                    src="assets/img/clients-logo/air-vanture.png"
+                    class="img-fluid logo-img"
+                    alt="Reputation"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Singapore SEO Agency You Can Relay On -->
+    <section class="pt-5 seo-agency overflow-hidden">
+      <div class="container-fluid px-0">
+        <div class="container">
+          <div class="row">
+            <div class="mx-auto col-lg-7">
+              <div class="section-title text-center mb-5">
+                <h2>Singapore SEO Agency You Can Relay On</h2>
+                <p>
+                  With our data-driven and proven process, BThrust partners
+                  experience an impressive average return on investment of 10x.
+                  Because Singapore SEO services are designed to get your
+                  website ranking HIGHER in search results.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid position-relative mb-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 mb-lg-0 mb-4">
+                <div class="text-center position-relative">
+                  <img
+                    src="assets/img/support-psg.png"
+                    alt="img"
+                    class="img-fluid"
+                  />
+                  <div class="animated-icons">
+                    <div class="icon-move square-animate"></div>
+                    <div class="icon-move triangle-animate"></div>
+                    <div class="icon-move plus-animate"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 my-auto">
+                <div
+                  class="content-bg-color-right frame-1-color section-subtitle"
+                >
+                  <h2>Get Upto 50% Grant Support with PSG</h2>
+                  <p>
+                    Leverage the Productivity Solutions Grant to receive up to
+                    50% funding support, revolutionizing your marketing efforts
+                    for increased leads and sales. As an approved vendor, we
+                    empower businesses to expand their reach and drive growth
+                    through SEO in Singapore data-driven strategies!
+                  </p>
+                  <div class="read-more mt-3">
+                    <a href="#">More Details About Grant!</a>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid position-relative mb-5">
+          <div class="container">
+            <div class="row flex_direction">
+              <div class="col-lg-6 my-auto">
+                <div
+                  class="content-bg-color-left frame-2-color section-subtitle"
+                >
+                  <h2>Dedicated And Professional Team</h2>
+                  <p>
+                    Where dedication meets professionalism, excellence is born!
+                  </p>
+                  <p>
+                    You can save time and effort by outsourcing your SEO
+                    marketing to BThrust, a reputable SEO company in Singapore.
+                    Your ranks will improve with the expertise of our team of
+                    SEO consultants and specialists, allowing you to focus on
+                    important business tasks. Let us handle your SEO Singapore
+                    campaigns for optimal results.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6 mb-lg-0 mb-4">
+                <div class="text-center position-relative">
+                  <img
+                    src="assets/img/dedicated-professional-team.png"
+                    alt="img"
+                    class="img-fluid"
+                  />
+                  <div class="animated-icons">
+                    <div class="icon-move square-animate"></div>
+                    <div class="icon-move triangle-animate"></div>
+                    <div class="icon-move plus-animate"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid position-relative mb-5">
+          <div class="container">
+            <div class="row">
+              <div class="col-lg-6 mb-lg-0 mb-4">
+                <div class="text-center position-relative">
+                  <img
+                    src="assets/img/seo-support.png"
+                    alt="img"
+                    class="img-fluid"
+                  />
+                  <div class="animated-icons">
+                    <div class="icon-move square-animate"></div>
+                    <div class="icon-move triangle-animate"></div>
+                    <div class="icon-move plus-animate"></div>
+                  </div>
+                </div>
+              </div>
+              <div class="col-lg-6 my-auto">
+                <div
+                  class="section-titl content-bg-color-right frame-3-color section-subtitle"
+                >
+                  <h2>24/7 SEO Support</h2>
+                  <p>An SEO Company That Never Leaves You In The Dark</p>
+                  <p>
+                    As a leading SEO Company in Singapore, with our 24/7
+                    reporting dashboard, you have complete access to track your
+                    progress whenever you want. Additionally, for a
+                    comprehensive review of the progress of your website.
+                  </p>
+                  <p>Businesses that partner with us enjoy:</p>
+                  <ul>
+                    <li>Detailed Monthly Reports</li>
+                    <li>24/7 Access To A Reporting Dashboard</li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid position-relative mb-5">
+          <div class="container">
+            <div class="row flex_direction">
+              <div class="col-lg-6 my-auto">
+                <div
+                  class="section-titl content-bg-color-left frame-4-color section-subtitle"
+                >
+                  <h2>Our Performance Guarantee</h2>
+                  <p>We Place Your Website In Front Of Your Ideal Customers</p>
+                  <p>
+                    At BThrust, we take pride in our SEO services in Singapore
+                    and are committed to delivering exceptional results for our
+                    clients. We stand behind our work and offer a performance
+                    guarantee to ensure your satisfaction.
+                  </p>
+                </div>
+              </div>
+              <div class="col-lg-6 mb-lg-0 mb-4">
+                <div class="text-center position-relative">
+                  <img
+                    src="assets/img/performance-guarantee.png"
+                    alt="img"
+                    class="img-fluid"
+                  />
+                  <div class="animated-icons">
+                    <div class="icon-move square-animate"></div>
+                    <div class="icon-move triangle-animate"></div>
+                    <div class="icon-move plus-animate"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Singapore SEO Agency You Can Relay On -->
+
+    <!-- Discover How Our SEO Team Can Skyrocket Your Business Growth Today! -->
+    <!-- <section class="py-5 page-breaker" style="background-color: #164b9e">
+      <div class="container">
+        <div class="text-center text-white">
+          <h2>
+            Discover How Our SEO Team Can Skyrocket<br />
+            Your Business Growth Today!
+          </h2>
+          <div class="read-more white-btn mt-3">
+            <a href="#">Book Strategy Call</a>
+          </div>
+        </div>
+      </div>
+      <div class="page-breaker-pattern d-none d-md-inline-block">
+        <img src="assets/img/cloud.png" alt="img" class="img-fluid cloud1" />
+        <img src="assets/img/cloud2.png" alt="img" class="img-fluid cloud2" />
+      </div>
+    </section> -->
+    <section class="page-breaker px-3">
+      <div
+        class="container position-relative"
+        style="
+          z-index: 2;
+
+          overflow: visible;
+        "
+      >
+        <div
+          class="row"
+          style="
+            background: linear-gradient(to right, #164b9e, #c4d7f5);
+            border-radius: 20px;
+          "
+        >
+          <div
+            class="col-md-7 pt-5 pb-md-5 px-5 d-flex text-center text-md-start align-items-center"
+            
+          >
+            <div class="text-white">
+              <h2>
+                Discover How Our SEO Team Can Skyrocket Your Business Growth
+                Today!
+              </h2>
+              <!-- <p class="text-white font-weight-bold" style="font-size: 20px">
+                BThrust can get you rank better for improvement in the long-run.
+              </p> -->
+              <div
+                class="read-more white-btn text-md-start mt-md-0 text-center mt-4"
+              >
+                <a href="#"><i class="fa fa-phone me-2"></i>Book Strategy Call</a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-5 my-auto text-center position-relative"
+            style="right: 0px"
+          >
+            <img src="assets/img/1.png" alt="" class="img-fluid cta-img" style="height: 250px;"/>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Discover How Our SEO Team Can Skyrocket Your Business Growth Today! -->
+
+    <!-- Featured Case Study section -->
+    <section class="featured-case-study pt-5">
+      <div class="container">
+        <div class="row">
+          <div class="mx-auto col-lg-5">
+            <div class="section-title text-center mb-5">
+              <h2>Featured Case Study</h2>
+              <p>An Expert Team that Practises what it Preaches. .</p>
+              <!-- <p>
+              BThrust SEO strategies drive results, without fail. Our SEO
+              services Singapore help you acquire more targeted traffic
+            </p> -->
+            </div>
+          </div>
+        </div>
+        <!-- ********* -->
+        <div
+          class="owl-carousel featured-case-study-owl owl-theme position-relative"
+        >
+          <!-- <div class="slick-slide"> -->
+          <div class="row featured-case-study-cont p-4">
+            <div
+              class="col-lg-6 col-12 px-lg-3 px-0 d-flex flex-column justify-content-between position-relative"
+            >
+              <div
+                class="d-flex flex-wrap justify-content-sm-between align-items-center justify-content-center"
+              >
+                <div class="">
+                  <img
+                    src="assets/img/svg/pal-line.png"
+                    class="seo-chart-acc"
+                    alt=""
+                  />
+                </div>
+                <div class="cta mt-sm-0 mt-2 me-lg-4 me-0">
+                  <a href="charted-account.html" class="btn"
+                    >Read Case Study <i class="fa fa-chevron-right"></i
+                  ></a>
+                </div>
+              </div>
+              <p class="py-3 mb-0">
+                Even though Company Tn Corporate Management Pte Ltd offered
+                high-quality business services, it faced limited online
+                visibility. They turned to BThrust's SEO services Singapore
+                expertise in search of a solution.!
+              </p>
+
+              <div class="timer-card pt-3">
+                <h5 class="text-uppercase text-center mb-0">client results</h5>
+                <div class="timer-card-box">
+                  <div class="px-0 card-1">
+                    <!-- Result Card 1 -->
+
+                    <div class="result-card">
+                      <div class="card-content">
+                        <h1
+                          class="percentage text-center mb-2"
+                          data-target="70"
+                        >
+                          0%
+                        </h1>
+                      </div>
+                      <div class="card-header">
+                        <span class="title">Increase in organic traffic</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="px-0 card-2" style>
+                    <!-- Result Card 2 -->
+                    <div class="result-card">
+                      <div class="card-content">
+                        <h1
+                          class="percentage text-center mb-2"
+                          data-target="65"
+                        >
+                          0%
+                        </h1>
+                      </div>
+                      <div class="card-header">
+                        <span class="title">Increase in Impressions 65%</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="px-0 card-3">
+                    <!-- Result Card 3 -->
+                    <div class="result-card">
+                      <div class="card-content">
+                        <h1
+                          class="percentage text-center mb-2"
+                          data-target="62"
+                        >
+                          0%
+                        </h1>
+                      </div>
+                      <div class="card-header">
+                        <p class="title">Increase in Organic Revenue</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-12 px-0 my-auto">
+              <img
+                src="assets/img/pal-line-img.png"
+                width="100%"
+                class="img-fluid"
+                alt="img"
+              />
+            </div>
+          </div>
+          <!-- </div> -->
+          <!-- ************ -->
+          <!-- <div class="slick-slide"> -->
+
+          <div class="row featured-case-study-cont p-4">
+            <div
+              class="col-lg-6 col-12 px-lg-3 px-0 d-flex flex-column justify-content-between position-relative"
+            >
+              <div
+                class="d-flex flex-wrap justify-content-sm-between justify-content-center"
+              >
+                <div class="my-3">
+                  <img
+                    src="assets/img/svg/atos.webp"
+                    class="seo-chart-acc"
+                    alt=""
+                  />
+                </div>
+                <div class="cta my-auto me-lg-4 me-0">
+                  <a href="charted-account.html" class="btn"
+                    >Read Case Study <i class="fa fa-chevron-right"></i
+                  ></a>
+                </div>
+              </div>
+              <p class="py-3 mb-0">
+                Even though Company Tn Corporate Management Pte Ltd offered
+                high-quality business services, it faced limited online
+                visibility. They turned to BThrust's SEO services Singapore
+                expertise in search of a solution.!
+              </p>
+
+              <div class="timer-card pt-3">
+                <h4 class="text-uppercase text-center">client results</h4>
+                <div class="timer-card-box">
+                  <div class="px-0 card-1">
+                    <!-- Result Card 1 -->
+
+                    <div class="result-card">
+                      <div class="card-content">
+                        <h1 class="percentage text-center per" data-target="70">
+                          0%
+                        </h1>
+                      </div>
+                      <div class="card-header">
+                        <span class="title">Increase in organic traffic</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="px-0 card-2" style>
+                    <!-- Result Card 2 -->
+                    <div class="result-card">
+                      <div class="card-content">
+                        <h1 class="percentage text-center per" data-target="65">
+                          0%
+                        </h1>
+                      </div>
+                      <div class="card-header">
+                        <span class="title">Increase in Impressions 65%</span>
+                      </div>
+                    </div>
+                  </div>
+                  <div class="px-0 card-3">
+                    <!-- Result Card 3 -->
+                    <div class="result-card">
+                      <div class="card-content">
+                        <h1 class="percentage text-center per" data-target="62">
+                          0%
+                        </h1>
+                      </div>
+                      <div class="card-header">
+                        <p class="title">Increase in Organic Revenue</p>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="col-lg-6 col-12 px-0">
+              <img
+                src="assets/img/atos-performance.png"
+                width="100%"
+                class="img-fluid"
+                alt="img"
+              />
+            </div>
+          </div>
+          <!-- </div> -->
+        </div>
+        <!-- ******** -->
+        <div
+          class="d-flex flex-sm-row flex-column mt-lg-5 mt-4 align-items-center justify-content-center"
+        >
+          <div class="read-more mx-2 mb-sm-0 mb-3">
+            <a href="success-stories.html">See all case study</a>
+          </div>
+          <div class="cta mx-2">
+            <a href="#" class="btn"
+              >Talk to our expert<i class="fa fa-chevron-right"></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section class="py-5 overflow-hidden d-none" style="background: #f5f9ff">
+      <div class="container">
+        <div class="row">
+          <div class="mx-auto col-lg-8">
+            <div class="section-title text-center mb-5">
+              <h2>Featured Case Study</h2>
+              <p>An Expert Team that Practises what it Preaches. .</p>
+              <p>
+                BThrust SEO strategies drive results, without fail. Our SEO
+                services Singapore help you acquire more targeted traffic
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid position-relative circle-shape-bg-left mb-5">
+        <div class="container">
+          <div class="row flex_direction">
+            <div class="col-lg-6 mt-lg-0 mt-4">
+              <div class="section-title feature-case-study">
+                <div class="">
+                  <img
+                    src="https://www.bthrust.com/images/tn-logo-final.png"
+                    alt="img"
+                    class="img-fluid"
+                  />
+                  <h5 class="highlighted mt-2">
+                    Tn Corporate Management Pte Ltd
+                  </h5>
+                </div>
+                <h3>Issue:</h3>
+                <p>
+                  Even though Company Tn Corporate Management Pte Ltd offered
+                  high-quality business services, it faced limited online
+                  visibility. They turned to BThrust's SEO services Singapore
+                  expertise in search of a solution.!
+                </p>
+
+                <h4>Company Goals:</h4>
+                <ul class="thumbs-marker">
+                  <li>
+                    Increase organic search visibility and keyword rankings.
+                  </li>
+                  <li>Drive targeted traffic and boost sales.</li>
+                  <li>Establish credibility and authority in the industry.</li>
+                </ul>
+                <h4>BThrust SEO Strategy:</h4>
+                <ul class="thumbs-marker">
+                  <li>In-depth website auditing to improve user experience.</li>
+                  <li>For higher search ranks, conduct keyword research..</li>
+                  <li>
+                    Creating engaging content to attract a targeted audience.
+                  </li>
+                  <li>Link building to raise domain authority.</li>
+                </ul>
+                <h4>Results:</h4>
+                <ul class="thumbs-marker">
+                  <li>70% increase in organic traffic.</li>
+                  <li>62% increase in organic revenue.</li>
+                  <li>Conversion rate increased.</li>
+                  <li>An established authority in the business industry.</li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6 my-auto">
+              <div class="d-flex result-list pb-3">
+                <!-- Result Card 1 -->
+                <div class="result-card">
+                  <div class="card-header">
+                    <div class="icon">&#x2197;</div>
+                    <span class="title">Increase in organic traffic</span>
+                  </div>
+                  <div class="card-content">
+                    <h1 class="percentage" data-target="70">0%</h1>
+                  </div>
+                  <div class="chart-line"></div>
+                </div>
+
+                <!-- Result Card 2 -->
+                <div class="result-card">
+                  <div class="card-header">
+                    <div class="icon">&#x2197;</div>
+                    <span class="title">Increase in Impressions</span>
+                  </div>
+                  <div class="card-content">
+                    <h1 class="percentage" data-target="65">0%</h1>
+                  </div>
+                  <div class="chart-line"></div>
+                </div>
+
+                <!-- Result Card 3 -->
+                <div class="result-card">
+                  <div class="card-header">
+                    <div class="icon">&#x2197;</div>
+                    <span class="title">Increase in Organic Revenue</span>
+                  </div>
+                  <div class="card-content">
+                    <h1 class="percentage" data-target="62">0%</h1>
+                  </div>
+                  <div class="chart-line"></div>
+                </div>
+              </div>
+              <div class="study-company-dash">
+                <img
+                  src="assets/img/psgdm-proven-box-1.png"
+                  alt="img"
+                  class="img-fluid"
+                />
+                <div class="dot-circle-1 animated-circle"></div>
+                <div class="dot-circle-2 animated-circle"></div>
+                <div class="dot-circle-3 animated-circle"></div>
+                <div class="dot-circle-4 animated-circle"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid position-relative circle-shape-bg-right">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-6 my-auto">
+              <div class="d-flex result-list pb-3 position-relative">
+                <!-- Result Card 1 -->
+                <div class="result-card">
+                  <div class="card-header">
+                    <div class="icon">&#x2197;</div>
+                    <span class="title">Increase in organic traffic</span>
+                  </div>
+                  <div class="card-content">
+                    <h1 class="percentage" data-target="70">0%</h1>
+                  </div>
+                  <div class="chart-line"></div>
+                </div>
+
+                <!-- Result Card 2 -->
+                <div class="result-card">
+                  <div class="card-header">
+                    <div class="icon">&#x2197;</div>
+                    <span class="title">Increase in Impressions</span>
+                  </div>
+                  <div class="card-content">
+                    <h1 class="percentage" data-target="65">0%</h1>
+                  </div>
+                  <div class="chart-line"></div>
+                </div>
+
+                <!-- Result Card 3 -->
+                <div class="result-card">
+                  <div class="card-header">
+                    <div class="icon">&#x2197;</div>
+                    <span class="title">Increase in Organic Revenue</span>
+                  </div>
+                  <div class="card-content">
+                    <h1 class="percentage" data-target="62">0%</h1>
+                  </div>
+                  <div class="chart-line"></div>
+                </div>
+              </div>
+              <div class="study-company-dash">
+                <img
+                  src="assets/img/psgdm-proven-box-2.png"
+                  alt="img"
+                  class="img-fluid"
+                />
+                <div class="dot-circle-5 animated-circle"></div>
+                <div class="dot-circle-6 animated-circle"></div>
+                <div class="dot-circle-7 animated-circle"></div>
+                <div class="dot-circle-8 animated-circle"></div>
+              </div>
+            </div>
+            <div class="col-lg-6 mt-lg-0 mt-4">
+              <div class="section-title feature-case-study">
+                <div class="">
+                  <img
+                    src="assets/img/happy-bird.png"
+                    alt="img"
+                    class="img-fluid"
+                  />
+                  <h5 class="highlighted mt-2">Happy Bird</h5>
+                </div>
+                <h3>Issue:</h3>
+                <p>
+                  A local cleaning firm, (Happy Bird), has trouble getting
+                  enough online visibility. They collaborated with BThrust to
+                  use local SEO in Singapore to increase their visibility and
+                  attract more clients.
+                </p>
+
+                <h4>Company Goals:</h4>
+                <ul class="thumbs-marker">
+                  <li>Boost local visibility and outrank competitors./li></li>
+                  <li>
+                    Enhance customer enquiries and drive targeted traffic.
+                  </li>
+                  <li>
+                    Create a reliable online presence and win customers' trust.
+                  </li>
+                  <li>Maximize revenue and conversions.</li>
+                </ul>
+                <h4>BThrust SEO Strategy:</h4>
+                <ul class="thumbs-marker">
+                  <li>
+                    Localized keyword optimization for targeted visibility.
+                  </li>
+                  <li>
+                    Optimization of Google My Business (GMB) for accurate
+                    listings.
+                  </li>
+                  <li>
+                    Local citations and directory listings for wider reach.
+                  </li>
+                  <li>
+                    Proactive online reputation management for customer trust.
+                  </li>
+                </ul>
+                <h4>Results:</h4>
+                <ul class="thumbs-marker">
+                  <li>
+                    We were able to rank them in the top position within four
+                    months of starting the service.
+                  </li>
+                  <li>An increase in client queries and website traffic.</li>
+                  <li>74% increase conversion rate.</li>
+                  <li>Mostly keywords are within the top 10th positions.</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Featured Case Study section -->
+
+    <section class="pt-5 page-breaker px-3">
+      <div
+        class="container position-relative"
+        style="
+          z-index: 2;
+
+          overflow: visible;
+        "
+      >
+        <div
+          class="row"
+          style="
+            background: linear-gradient(to right, #164b9e, #c4d7f5);
+            border-radius: 20px;
+          "
+        >
+          <div
+            class="col-md-7 px-5 pt-5 pb-md-5 d-flex text-center text-md-start align-items-center"
+            
+          >
+            <div class="text-white">
+              <h2>Book Your Call Now!</h2>
+              <p class="text-white font-weight-bold" style="font-size: 20px">
+                BThrust can get you rank better for improvement in the long-run.
+              </p>
+              <div
+                class="read-more white-btn text-md-start mt-md-0 text-center mt-4"
+              >
+                <a href="#"><i class="fa fa-phone me-2"></i>let's talk</a>
+              </div>
+            </div>
+          </div>
+
+          <div
+            class="col-md-5 my-auto text-center position-relative"
+            style="right: 0px"
+          >
+            <img src="assets/img/1.png" alt="" class="img-fluid cta-img" style="height: 250px;" />
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- More Reasons To Choose BThrust As Your SEO Agency -->
+    <section class="why-choose-our-company pt-5 pb-lg-5 overflow-hidden">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-10 mx-auto">
+            <div class="section-title text-center mb-4">
+              <h2>More Reasons To Choose BThrust As Your SEO Agency</h2>
+              <p>
+                Choosing the right SEO company to take on your website top at
+                SERP ranking is a big decision.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-6 mb-lg-0 mb-4">
+            <div class="text-center position-relative">
+              <img
+                src="assets/img/choose-seo-company.png"
+                alt="illustration"
+                class="img-fluid main-image"
+              />
+              <div class="button-group">
+                <button data-index="0" class="btn_0"><span>01</span></button>
+                <button data-index="1" class="btn_0"><span>02</span></button>
+                <button data-index="2" class="btn_0"><span>03</span></button>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="gtco-testimonials our-service-card">
+              <div
+                class="owl-carousel owl-carousel2 owl-theme owl-loaded owl-drag"
+              >
+                <div class="owl-stage-outer">
+                  <div class="owl-stage">
+                    <div class="owl-item cloned">
+                      <div class="our-service reason-to-choose">
+                        <div class="row">
+                          <div class="col-12 mb-4">
+                            <div class="talk-link-card">
+                              <h5>Award-Winning SEO Agency</h5>
+                              <p>
+                                Bthrust is an award-winning SEO agency that has
+                                been recognized for its SEO services in
+                                Singapore and SEO Services In Malaysia.
+                              </p>
+                            </div>
+                          </div>
+                          <div class="col-12 mb-4">
+                            <div class="talk-link-card">
+                              <h5>Productivity Solutions Grant</h5>
+                              <p>
+                                Take advantage of the government's Productivity
+                                Solutions Grant (PSG) to support up to 50% of
+                                the cost of our SEO services in Singapore.
+                              </p>
+                            </div>
+                          </div>
+                          <div class="col-12 mb-4">
+                            <div class="talk-link-card">
+                              <h5>Productivity Solutions Grant</h5>
+                              <p>
+                                Take advantage of the government's Productivity
+                                Solutions Grant (PSG) to support up to 50% of
+                                the cost of our SEO services in Singapore.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="owl-item">
+                      <div class="our-service reason-to-choose">
+                        <div class="row">
+                          <div class="col-12 mb-4">
+                            <div class="talk-link-card">
+                              <h5>Award-Winning SEO Agency</h5>
+                              <p>
+                                Bthrust is an award-winning SEO agency that has
+                                been recognized for its SEO services in
+                                Singapore and SEO Services In Malaysia.
+                              </p>
+                            </div>
+                          </div>
+                          <div class="col-12 mb-4">
+                            <div class="talk-link-card">
+                              <h5>Productivity Solutions Grant</h5>
+                              <p>
+                                Take advantage of the government's Productivity
+                                Solutions Grant (PSG) to support up to 50% of
+                                the cost of our SEO services in Singapore.
+                              </p>
+                            </div>
+                          </div>
+                          <div class="col-12 mb-4">
+                            <div class="talk-link-card">
+                              <h5>Productivity Solutions Grant</h5>
+                              <p>
+                                Take advantage of the government's Productivity
+                                Solutions Grant (PSG) to support up to 50% of
+                                the cost of our SEO services in Singapore.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="owl-item">
+                      <div class="our-service reason-to-choose">
+                        <div class="row">
+                          <div class="col-12 mb-4">
+                            <div class="talk-link-card">
+                              <h5>Award-Winning SEO Agency</h5>
+                              <p>
+                                Bthrust is an award-winning SEO agency that has
+                                been recognized for its SEO services in
+                                Singapore and SEO Services In Malaysia.
+                              </p>
+                            </div>
+                          </div>
+                          <div class="col-12 mb-4">
+                            <div class="talk-link-card">
+                              <h5>Productivity Solutions Grant</h5>
+                              <p>
+                                Take advantage of the government's Productivity
+                                Solutions Grant (PSG) to support up to 50% of
+                                the cost of our SEO services in Singapore.
+                              </p>
+                            </div>
+                          </div>
+                          <div class="col-12 mb-4">
+                            <div class="talk-link-card">
+                              <h5>Productivity Solutions Grant</h5>
+                              <p>
+                                Take advantage of the government's Productivity
+                                Solutions Grant (PSG) to support up to 50% of
+                                the cost of our SEO services in Singapore.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- More Reasons To Choose BThrust As Your SEO Agency -->
+
+    <!-- Our Company’s Proven Process -->
+
+    <section
+      class="campony-proven-process py-5 position-relative"
+      style="background: #ddf5ff"
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 col-12 position-sticky pe-md-5 pe-0">
+            <div class="process-header">
+              <div class="section-subtitle mb-4">
+                <h2>Our Company’s Proven Process</h2>
+                <p class="pt-3">
+                  It's easy to get the help you need, fast. We made it easy for
+                  you to schedule your consultation. In fact, it's as simple as
+                  clicking the link below!
+                </p>
+                <p>Here's how the whole process works, from start to finish</p>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 col-12">
+            <!-- item-1 -->
+            <div class="row">
+              <div class="col-2 d-flex flex-column line-box">
+                <div
+                  class="mx-auto fa-2x d-flex justify-content-center align-items-center"
+                  style="
+                    border: 3px solid transparent;
+                    border-radius: 50%;
+                    background: linear-gradient(90deg, #e4ebf8, #98b3df)
+                        padding-box,
+                      linear-gradient(90deg, #8aa6d3, #164b9e) border-box;
+                    height: 70px;
+                    width: 70px;
+                  "
+                >
+                  <i class="fa fa-paper-plane" style="color: #164b9e"></i>
+                </div>
+
+                <div class="line d-flex py-3 flex-grow-1">
+                  <div
+                    class="mx-auto line-progress"
+                    style="width: 2px; height: 100%"
+                  ></div>
+                </div>
+              </div>
+              <div class="col-10 pt-2 ps-4 left-line-box" style="height: 200px">
+                <h5>Initial Conversation</h5>
+                <p>
+                  The first step you have to fill up the enquiry form on our
+                  website. It means submitting your details through our
+                  user-friendly form.
+                </p>
+              </div>
+            </div>
+            <!-- item-1 -->
+            <div class="row">
+              <div class="col-2 d-flex flex-column line-box">
+                <div
+                  class="mx-auto fa-2x d-flex justify-content-center align-items-center"
+                  style="
+                    border: 3px solid transparent;
+                    border-radius: 50%;
+                    background: linear-gradient(90deg, #e4ebf8, #98b3df)
+                        padding-box,
+                      linear-gradient(90deg, #8aa6d3, #164b9e) border-box;
+                    height: 70px;
+                    width: 70px;
+                  "
+                >
+                  <i class="fa fa-phone" style="color: #164b9e"></i>
+                </div>
+
+                <div class="line d-flex py-3 flex-grow-1">
+                  <div
+                    class="mx-auto line-progress"
+                    style="width: 2px; height: 100%"
+                  ></div>
+                </div>
+              </div>
+              <div class="col-10 pt-2 ps-4 left-line-box" style="height: 200px">
+                <h5>We Contact You</h5>
+                <p>
+                  Once you submitted the form, our team promptly reaches out to
+                  discuss and understand your SEO requirements and goals.
+                </p>
+              </div>
+            </div>
+            <!-- item-1 -->
+            <div class="row">
+              <div class="col-2 d-flex flex-column line-box">
+                <div
+                  class="mx-auto fa-2x d-flex justify-content-center align-items-center"
+                  style="
+                    border: 3px solid transparent;
+                    border-radius: 50%;
+                    background: linear-gradient(90deg, #e4ebf8, #98b3df)
+                        padding-box,
+                      linear-gradient(90deg, #8aa6d3, #164b9e) border-box;
+                    height: 70px;
+                    width: 70px;
+                  "
+                >
+                  <i class="fa fa-edit" style="color: #164b9e"></i>
+                </div>
+
+                <div class="line d-flex py-3 flex-grow-1">
+                  <div
+                    class="mx-auto line-progress"
+                    style="width: 2px; height: 100%"
+                  ></div>
+                </div>
+              </div>
+              <div class="col-10 pt-2 ps-4 left-line-box" style="height: 200px">
+                <h5>Proposal</h5>
+                <p>
+                  After understanding all your requirements, we will prepare a
+                  proposal. You will receive a customized proposal outlining
+                  suggested strategies and services.
+                </p>
+              </div>
+            </div>
+            <!-- item-1 -->
+            <div class="row">
+              <div class="col-2 d-flex flex-column line-box">
+                <div
+                  class="mx-auto fa-2x d-flex justify-content-center align-items-center"
+                  style="
+                    border: 3px solid transparent;
+                    border-radius: 50%;
+                    background: linear-gradient(90deg, #e4ebf8, #98b3df)
+                        padding-box,
+                      linear-gradient(90deg, #8aa6d3, #164b9e) border-box;
+                    height: 70px;
+                    width: 70px;
+                  "
+                >
+                  <i class="fa fa-key" style="color: #164b9e"></i>
+                </div>
+
+                <div class="line d-flex py-3 flex-grow-1">
+                  <div
+                    class="mx-auto line-progress"
+                    style="width: 2px; height: 100%"
+                  ></div>
+                </div>
+              </div>
+              <div class="col-10 pt-2 ps-4 left-line-box" style="height: 200px">
+                <h5>Keyword Finalization</h5>
+                <p>
+                  Once you are okay with the proposal, we collaboratively select
+                  the most relevant and high-converting keywords for your
+                  business.
+                </p>
+              </div>
+            </div>
+            <!-- item-1 -->
+            <div class="row">
+              <div class="col-2 d-flex flex-column line-box">
+                <div
+                  class="mx-auto fa-2x d-flex justify-content-center align-items-center"
+                  style="
+                    border: 3px solid transparent;
+                    border-radius: 50%;
+                    background: linear-gradient(90deg, #e4ebf8, #98b3df)
+                        padding-box,
+                      linear-gradient(90deg, #8aa6d3, #164b9e) border-box;
+                    height: 70px;
+                    width: 70px;
+                  "
+                >
+                  <i class="fa fa-map" style="color: #164b9e"></i>
+                </div>
+
+                <div class="line d-flex py-3 flex-grow-1">
+                  <div
+                    class="mx-auto line-progress"
+                    style="width: 2px; height: 100%"
+                  ></div>
+                </div>
+              </div>
+              <div class="col-10 pt-2 ps-4 left-line-box" style="height: 200px">
+                <h5>Develop a Strategy</h5>
+                <p>
+                  We develop a comprehensive SEO strategy, including
+                  optimization techniques, content creation, and competitor
+                  analysis
+                </p>
+              </div>
+            </div>
+            <!-- item-1 -->
+            <div class="row">
+              <div class="col-2 d-flex flex-column line-box">
+                <div
+                  class="mx-auto fa-2x d-flex justify-content-center align-items-center"
+                  style="
+                    border: 3px solid transparent;
+                    border-radius: 50%;
+                    background: linear-gradient(90deg, #e4ebf8, #98b3df)
+                        padding-box,
+                      linear-gradient(90deg, #8aa6d3, #164b9e) border-box;
+                    height: 70px;
+                    width: 70px;
+                  "
+                >
+                  <i class="fa fa-handshake" style="color: #164b9e"></i>
+                </div>
+
+                <div class="line d-flex py-3 flex-grow-1">
+                  <div
+                    class="mx-auto line-progress"
+                    style="width: 2px; height: 100%"
+                  ></div>
+                </div>
+              </div>
+              <div class="col-10 pt-2 ps-4 left-line-box" style="height: 200px">
+                <h5>Link Building</h5>
+                <p>
+                  After developing an effective strategy, we implement a
+                  targeted link building strategy to improve your website's
+                  authority and visibility.
+                </p>
+              </div>
+            </div>
+            <!-- item-1 -->
+            <div class="row">
+              <div class="col-2 d-flex flex-column line-box">
+                <div
+                  class="mx-auto fa-2x d-flex justify-content-center align-items-center"
+                  style="
+                    border: 3px solid transparent;
+                    border-radius: 50%;
+                    background: linear-gradient(90deg, #e4ebf8, #98b3df)
+                        padding-box,
+                      linear-gradient(90deg, #8aa6d3, #164b9e) border-box;
+                    height: 70px;
+                    width: 70px;
+                  "
+                >
+                  <i class="fa fa-chart-bar" style="color: #164b9e"></i>
+                </div>
+
+                <div class="line d-flex py-3 flex-grow-1"></div>
+              </div>
+              <div class="col-10 pt-2 left-line-box" style="height: 200px">
+                <h5>Reporting</h5>
+                <p>
+                  We provide detailed reports on key metrics, keyword rankings,
+                  and the progress of your SEO campaign
+                </p>
+              </div>
+            </div>
+
+            <!-- item-5 -->
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section
+      class="py-5"
+      style="background-color: linear-gradient(135deg, #f4f6fc, #eaf1fb)"
+      ;
+    >
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6">
+            <div
+              class="section-subtitle mb-4 position-sticky"
+              style="top: 180px"
+            >
+              <!-- <h2>Frequently Asked Questions</h2> -->
+              <div class="">
+                <div class="section-subtitle">
+                  <h2 style="margin-bottom: 150px">
+                    Frequently Asked Questions
+                  </h2>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6">
+            <div class="faq-container">
+              <!-- FAQ Item 1 -->
+              <div
+                class="faq-item fade-in-up"
+                data-category="general"
+                style="animation-delay: 0.1s"
+              >
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                  <div class="d-flex align-items-center">
+                    <div class="faq-icon">
+                      <i class="fas fa-rocket"></i>
+                    </div>
+                    <span
+                      >What services do you offer for digital marketing
+                      campaigns?</span
+                    >
+                  </div>
+                  <div class="faq-toggle">
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    We offer comprehensive digital marketing services including
+                    SEO optimization, social media marketing, pay-per-click
+                    advertising, content marketing, email campaigns, and data
+                    analytics. Our team creates customized strategies tailored
+                    to your business goals and target audience to maximize your
+                    online presence and ROI.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 2 -->
+              <div
+                class="faq-item fade-in-up"
+                data-category="pricing"
+                style="animation-delay: 0.2s"
+              >
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                  <div class="d-flex align-items-center">
+                    <div class="faq-icon">
+                      <i class="fas fa-dollar-sign"></i>
+                    </div>
+                    <span>How much do your marketing campaigns cost?</span>
+                  </div>
+                  <div class="faq-toggle">
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    Our pricing varies based on the scope and complexity of your
+                    project. We offer flexible packages starting from $5,000 for
+                    basic campaigns up to $50,000+ for comprehensive enterprise
+                    solutions. We provide detailed quotes after understanding
+                    your specific needs and goals during our free consultation.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 3 -->
+              <div
+                class="faq-item fade-in-up"
+                data-category="general"
+                style="animation-delay: 0.3s"
+              >
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                  <div class="d-flex align-items-center">
+                    <div class="faq-icon">
+                      <i class="fas fa-clock"></i>
+                    </div>
+                    <span
+                      >How long does it take to see results from a
+                      campaign?</span
+                    >
+                  </div>
+                  <div class="faq-toggle">
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    Results timeline varies depending on the campaign type. PPC
+                    campaigns can show immediate results within days, while SEO
+                    and content marketing typically take 3-6 months to show
+                    significant results. Social media campaigns usually show
+                    engagement improvements within 2-4 weeks. We provide regular
+                    reports to track progress throughout the campaign.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 4 -->
+              <div
+                class="faq-item fade-in-up"
+                data-category="technical"
+                style="animation-delay: 0.4s"
+              >
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                  <div class="d-flex align-items-center">
+                    <div class="faq-icon">
+                      <i class="fas fa-chart-line"></i>
+                    </div>
+                    <span>What analytics and reporting do you provide?</span>
+                  </div>
+                  <div class="faq-toggle">
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    We provide comprehensive analytics including website
+                    traffic, conversion rates, click-through rates, engagement
+                    metrics, ROI analysis, and detailed performance reports.
+                    You'll receive monthly reports with actionable insights and
+                    recommendations. We also offer real-time dashboard access so
+                    you can monitor your campaign performance 24/7.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 5 -->
+              <div
+                class="faq-item fade-in-up"
+                data-category="support"
+                style="animation-delay: 0.5s"
+              >
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                  <div class="d-flex align-items-center">
+                    <div class="faq-icon">
+                      <i class="fas fa-headset"></i>
+                    </div>
+                    <span
+                      >What kind of support do you offer during campaigns?</span
+                    >
+                  </div>
+                  <div class="faq-toggle">
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    We provide 24/7 support throughout your campaign. You'll
+                    have a dedicated account manager as your primary point of
+                    contact, plus access to our technical support team. We offer
+                    phone, email, and live chat support, along with regular
+                    strategy calls to discuss performance and optimization
+                    opportunities.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 6 -->
+              <div
+                class="faq-item fade-in-up"
+                data-category="general"
+                style="animation-delay: 0.6s"
+              >
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                  <div class="d-flex align-items-center">
+                    <div class="faq-icon">
+                      <i class="fas fa-users"></i>
+                    </div>
+                    <span>Do you work with businesses of all sizes?</span>
+                  </div>
+                  <div class="faq-toggle">
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    Yes, we work with businesses of all sizes, from startups and
+                    small businesses to large enterprises. Our strategies are
+                    scalable and customized to fit your budget and goals.
+                    Whether you're just starting out or looking to expand your
+                    existing digital presence, we have solutions that can help
+                    you succeed.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 7 -->
+              <div
+                class="faq-item fade-in-up"
+                data-category="technical"
+                style="animation-delay: 0.7s"
+              >
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                  <div class="d-flex align-items-center">
+                    <div class="faq-icon">
+                      <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <span
+                      >Are your campaigns optimized for mobile devices?</span
+                    >
+                  </div>
+                  <div class="faq-toggle">
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    Absolutely! All our campaigns are mobile-first and optimized
+                    for all devices. With over 60% of web traffic coming from
+                    mobile devices, we ensure your campaigns perform excellently
+                    on smartphones, tablets, and desktops. We test across
+                    multiple devices and browsers to guarantee optimal user
+                    experience.
+                  </p>
+                </div>
+              </div>
+
+              <!-- FAQ Item 8 -->
+              <div
+                class="faq-item fade-in-up"
+                data-category="pricing"
+                style="animation-delay: 0.8s"
+              >
+                <button class="faq-question" onclick="toggleFAQ(this)">
+                  <div class="d-flex align-items-center">
+                    <div class="faq-icon">
+                      <i class="fas fa-handshake"></i>
+                    </div>
+                    <span
+                      >Do you offer any guarantees on campaign
+                      performance?</span
+                    >
+                  </div>
+                  <div class="faq-toggle">
+                    <i class="fas fa-chevron-down"></i>
+                  </div>
+                </button>
+                <div class="faq-answer">
+                  <p>
+                    While we can't guarantee specific results due to market
+                    variables, we do guarantee our commitment to your success.
+                    We offer a 30-day satisfaction guarantee - if you're not
+                    happy with our service in the first month, we'll work to
+                    make it right or provide a full refund. Our 98% client
+                    retention rate speaks to our dedication to delivering
+                    results.
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SEO Results Process -->
+    <!-- SEO Results section -->
+    <section class="pt-5 google-ads position-relative overflow-hidden">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 mx-auto">
+            <div class="section-title text-center mb-4">
+              <h2>SEO Results</h2>
+              <p>
+                It's easy to get the help you need, fast. We made it easy for
+                you to schedule your consultation. In fact, it's as simple as
+                clicking the link below!
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="container-fluid keyword-rank-data-1 px-0 mb-5">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div
+                id="carouselExampleCaptions"
+                class="carousel slide"
+                data-bs-ride="carousel"
+              >
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <div class="keyword-rank-im position-relative">
+                      <img
+                        src="assets/img/20.png"
+                        alt="img"
+                        class="img-fluid"
+                      />
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="keyword-rank-im position-relative">
+                      <img
+                        src="assets/img/22.png"
+                        alt="img"
+                        class="img-fluid"
+                      />
+                    </div>
+                  </div>
+                  <div class="carousel-item">
+                    <div class="keyword-rank-im position-relative">
+                      <img
+                        src="assets/img/21.png"
+                        alt="img"
+                        class="img-fluid"
+                      />
+                    </div>
+                  </div>
+                </div>
+                <div class="animated-icons">
+                  <div class="icon-move square-animate"></div>
+                  <div class="icon-move triangle-animate"></div>
+                  <div class="icon-move plus-animate"></div>
+                </div>
+                <div class="proces-circle-1"></div>
+                <div class="proces-circle-2"></div>
+                <div class="proces-circle-3"></div>
+                <button
+                  class="carousel-control-prev"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="prev"
+                >
+                  <span
+                    class="carousel-control-prev-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button
+                  class="carousel-control-next"
+                  type="button"
+                  data-bs-target="#carouselExampleCaptions"
+                  data-bs-slide="next"
+                >
+                  <span
+                    class="carousel-control-next-icon"
+                    aria-hidden="true"
+                  ></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SEO Results section -->
+    <section class="proven-process pt-5 d-none">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-7 mx-auto">
+            <div class="text-center mb-4">
+              <h2>Our Company’s Proven Process</h2>
+              <p>
+                It's easy to get the help you need, fast. We made it easy for
+                you to schedule your consultation. In fact, it's as simple as
+                clicking the link below!
+              </p>
+              <p>Here's how the whole process works, from start to finish</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="container-fluid position-relative keyword-rank-data-1 px-0 mb-5"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="keyword-rank-im position-relative">
+                <img
+                  src="assets/img/tnpl-rank.png"
+                  alt="img"
+                  class="img-fluid"
+                />
+                <div class="proces-circle-1"></div>
+                <div class="proces-circle-2"></div>
+                <div class="proces-circle-3"></div>
+              </div>
+              <div class="company-keyword-rank position-relative d-none">
+                <div>
+                  <img
+                    src="assets/img/tnpl-web-img.png"
+                    alt="img"
+                    class="img-fluid"
+                  />
+                </div>
+                <div class="keyword-rank">
+                  <img
+                    src="assets/img/tnpl-rank-list.png"
+                    alt="img"
+                    class="img-fluid"
+                  />
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="container-fluid position-relative keyword-rank-data-2 px-0 mb-5"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="keyword-rank-im position-relative">
+                <img
+                  src="assets/img/global-edu-rank.png"
+                  alt="img"
+                  class="img-fluid"
+                />
+                <div class="proces-circle-1"></div>
+                <div class="proces-circle-4"></div>
+                <div class="proces-circle-3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        class="container-fluid position-relative keyword-rank-data-3 px-0 mb-5"
+      >
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="keyword-rank-im position-relative">
+                <img
+                  src="assets/img/chelsea-rank.png"
+                  alt="img"
+                  class="img-fluid"
+                />
+                <div class="proces-circle-1"></div>
+                <div class="proces-circle-2"></div>
+                <div class="proces-circle-3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="container-fluid position-relative keyword-rank-data-4 px-0">
+        <div class="container">
+          <div class="row">
+            <div class="col-12">
+              <div class="keyword-rank-im position-relative">
+                <img
+                  src="assets/img/happybird-rank.png"
+                  alt="img"
+                  class="img-fluid"
+                />
+                <div class="proces-circle-1"></div>
+                <div class="proces-circle-4"></div>
+                <div class="proces-circle-3"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- SEO Results Process -->
+
+    <!-- Our clients section -->
+    <section class="our-client py-5">
+      <div class="container">
+        <div class="row">
+          <div class="col-md-5 my-auto">
+            <div class="section-subtitle text-md-start text-center">
+              <h2>Our clients</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Molestie faucibus cras donec consequat urna.
+              </p>
+              <div class="read-more mt-3">
+                <a href="clients.html">More Clients</a>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-7 mt-md-0 mt-4">
+            <div class="clients-logos">
+              <div class="rc-carousel" style="--tiles: 18">
+                <!-- rc-carousel-strip animation -->
+                <div class="rc-carousel-strip">
+                  <!-- Flexbox -->
+                  <div class="rc-carousel-box">
+                    <!-- Items start -->
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/3E-accounting.png"
+                        alt="dhl"
+                      />
+                    </div>
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/9-creation-1.png"
+                        alt="fedex"
+                      />
+                    </div>
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/accordsupplies-2.png"
+                        alt="ups"
+                      />
+                    </div>
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/ace-interior-1.png"
+                        alt="upsp"
+                      />
+                    </div>
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/air-vanture.png"
+                        alt="ems"
+                      />
+                    </div>
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/alpha_automation_01.png"
+                        alt="dpd"
+                      />
+                    </div>
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/bridgeman.png"
+                        alt="gls"
+                      />
+                    </div>
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/cgr-1.png"
+                        alt="auspost"
+                      />
+                    </div>
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/changi-air.png"
+                        alt="dsv"
+                      />
+                    </div>
+                    <!-- Items end -->
+
+                    <!-- Duplicate items start, for infinite loop -->
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/3E-accounting.png"
+                        alt="dhl"
+                      />
+                    </div>
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/9-creation-1.png"
+                        alt="fedex"
+                      />
+                    </div>
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/accordsupplies-2.png"
+                        alt="ups"
+                      />
+                    </div>
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/ace-interior-1.png"
+                        alt="upsp"
+                      />
+                    </div>
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/air-vanture.png"
+                        alt="ems"
+                      />
+                    </div>
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/alpha_automation_01.png"
+                        alt="dpd"
+                      />
+                    </div>
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/bridgeman.png"
+                        alt="gls"
+                      />
+                    </div>
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/cgr-1.png"
+                        alt="auspost"
+                      />
+                    </div>
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/changi-air.png"
+                        alt="dsv"
+                      />
+                    </div>
+                    <!-- Duplicate items end -->
+                  </div>
+                  <!-- Flexbox ends -->
+                </div>
+                <!-- rc-carousel-strip ends -->
+              </div>
+              <!-- rc-carousel wrapper ends -->
+
+              <!-- rc-carousel wrapper, set total tiles count including duplicate items -->
+              <div class="rc-carousel" style="--tiles: 18">
+                <!-- rc-carousel-strip animation -->
+                <div class="rc-carousel-strip reverse">
+                  <!-- Flexbox -->
+                  <div class="rc-carousel-box">
+                    <!-- Items start -->
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/dasoon.png"
+                        alt="shopify"
+                      />
+                    </div>
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/ee-original.png"
+                        alt="shopify plus"
+                      />
+                    </div>
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/Emerio.png"
+                        alt="woocommerce"
+                      />
+                    </div>
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/espirit-logo.png"
+                        alt="bigcommerce"
+                      />
+                    </div>
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/ezgifts_logo_02-1.png"
+                        alt="salesforce"
+                      />
+                    </div>
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/four-leaves.png"
+                        alt="magento"
+                      />
+                    </div>
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/Greencare.png"
+                        alt="squarespace"
+                      />
+                    </div>
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/hazel.png"
+                        alt="ebay"
+                      />
+                    </div>
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/hazel.png"
+                        alt="amazon"
+                      />
+                    </div>
+                    <!-- Items end -->
+                    <!-- Duplicate items start, for infinite loop -->
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/dasoon.png"
+                        alt="shopify"
+                      />
+                    </div>
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/ee-original.png"
+                        alt="shopify plus"
+                      />
+                    </div>
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/Emerio.png"
+                        alt="woocommerce"
+                      />
+                    </div>
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/espirit-logo.png"
+                        alt="bigcommerce"
+                      />
+                    </div>
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/ezgifts_logo_02-1.png"
+                        alt="salesforce"
+                      />
+                    </div>
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/four-leaves.png"
+                        alt="magento"
+                      />
+                    </div>
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/Greencare.png"
+                        alt="squarespace"
+                      />
+                    </div>
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/hazel.png"
+                        alt="ebay"
+                      />
+                    </div>
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/hazel.png"
+                        alt="amazon"
+                      />
+                    </div>
+                    <!-- Duplicate items end -->
+                  </div>
+                  <!-- Flexbox ends -->
+                </div>
+                <!-- rc-carousel-strip ends -->
+              </div>
+              <!-- rc-carousel wrapper ends -->
+              <div class="rc-carousel" style="--tiles: 18">
+                <!-- rc-carousel-strip animation -->
+                <div class="rc-carousel-strip">
+                  <!-- Flexbox -->
+                  <div class="rc-carousel-box">
+                    <!-- Items start -->
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/hypercom-1.png"
+                        alt="dhl"
+                      />
+                    </div>
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/idemitsu.png"
+                        alt="fedex"
+                      />
+                    </div>
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/interisland-1.png"
+                        alt="ups"
+                      />
+                    </div>
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/jayway.png"
+                        alt="upsp"
+                      />
+                    </div>
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/jumma-logo-Copy.png"
+                        alt="ems"
+                      />
+                    </div>
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/Konika-Menolta-logo.png"
+                        alt="dpd"
+                      />
+                    </div>
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/logo-happybird.png"
+                        alt="gls"
+                      />
+                    </div>
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/logo-palline.png"
+                        alt="auspost"
+                      />
+                    </div>
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/megacool.png"
+                        alt="dsv"
+                      />
+                    </div>
+                    <!-- Items end -->
+
+                    <!-- Duplicate items start, for infinite loop -->
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/hypercom-1.png"
+                        alt="dhl"
+                      />
+                    </div>
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/idemitsu.png"
+                        alt="fedex"
+                      />
+                    </div>
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/interisland-1.png"
+                        alt="ups"
+                      />
+                    </div>
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/jayway.png"
+                        alt="upsp"
+                      />
+                    </div>
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/jumma-logo-Copy.png"
+                        alt="ems"
+                      />
+                    </div>
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/Konika-Menolta-logo.png"
+                        alt="dpd"
+                      />
+                    </div>
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/logo-happybird.png"
+                        alt="gls"
+                      />
+                    </div>
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/logo-palline.png"
+                        alt="auspost"
+                      />
+                    </div>
+                    <div class="rc-carousel-item">
+                      <img
+                        class="rc-carousel-item-image"
+                        src="assets/img/clients-logo/megacool.png"
+                        alt="dsv"
+                      />
+                    </div>
+                    <!-- Duplicate items end -->
+                  </div>
+                  <!-- Flexbox ends -->
+                </div>
+                <!-- rc-carousel-strip ends -->
+              </div>
+              <!-- rc-carousel wrapper ends -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Our clients section -->
+
+    <!-- Client Review section -->
+    <section class="rated-by-google pb-5 overflow-hidden">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 mb-md-0 mb-4">
+            <div
+              class="section-subtitle google-rating text-lg-start text-center"
+            >
+              <h2>Client Review</h2>
+              <h6 class="highlighted">BThrust Technology Solution</h6>
+            </div>
+            <div class="gtco-testimonials">
+              <div
+                class="owl-carousel owl-carousel1 owl-theme owl-loaded owl-drag"
+              >
+                <div class="owl-stage-outer">
+                  <div class="owl-stage">
+                    <div class="owl-item cloned">
+                      <div>
+                        <div class="review-card mb-4">
+                          <div class="card-body">
+                            <div class="review-profile">
+                              <div class="d-flex align-items-center avatar-img">
+                                <img
+                                  class="card-img-top img-fluid lzl-cached lzl-ed"
+                                  src="assets/img/avatar-1.png"
+                                  alt="img"
+                                />
+
+                                <div class="author-post">
+                                  <h6>Tan Junjie</h6>
+                                  <p>Digital Marketer</p>
+                                </div>
+                              </div>
+                              <div class="star-icon px-0">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                              </div>
+                            </div>
+                            <div class="card-text">
+                              <p>
+                                Leon and darts very professional and do very
+                                helpful items for xin hua tcm
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="review-card">
+                          <div class="card-body">
+                            <div class="review-profile">
+                              <div class="d-flex align-items-center avatar-img">
+                                <img
+                                  class="card-img-top img-fluid lzl-cached lzl-ed"
+                                  src="assets/img/avatar-1.png"
+                                  alt="img"
+                                />
+
+                                <div class="author-post">
+                                  <h6>Tan Junjie</h6>
+                                  <p>Digital Marketer</p>
+                                </div>
+                              </div>
+                              <div class="star-icon px-0">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                              </div>
+                            </div>
+                            <div class="card-text">
+                              <p>
+                                Our experience with BThrust has been a fantastic
+                                one so far! Special mentions to Michaela and
+                                Terrence from the team. Both of them have been
+                                working closely together with me to improve my
+                                sites rankings. We have also tried many other
+                                SEO companies in Singapore but none of their
+                                results can compare to BThrust’s. I won’t have
+                                to think twice about suggesting BThrust SEO
+                                Services to others!!
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="owl-item">
+                      <div>
+                        <div class="review-card mb-4">
+                          <div class="card-body">
+                            <div class="review-profile">
+                              <div class="d-flex align-items-center avatar-img">
+                                <img
+                                  class="card-img-top img-fluid lzl-cached lzl-ed"
+                                  src="assets/img/avatar-1.png"
+                                  alt="img"
+                                />
+
+                                <div class="author-post">
+                                  <h6>Tan Junjie</h6>
+                                  <p>Digital Marketer</p>
+                                </div>
+                              </div>
+                              <div class="star-icon px-0">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                              </div>
+                            </div>
+                          </div>
+                          <div class="card-text">
+                            <p>
+                              Michaela has been very patient and professional in
+                              attending to our<br />
+                              requirements and meeting objectives within the
+                              projected timeline. Within<br />
+                              each time frame, we have most certainly improved
+                              and reached our SEO<br />
+                              goals, and we are hoping to achieve even more with
+                              Bthrust’s firm support!<br />
+                              All in all, the quality of service is highly
+                              commendable and most definitely<br />
+                              recommended!
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="review-card">
+                        <div class="card-body">
+                          <div class="review-profile">
+                            <div class="d-flex align-items-center avatar-img">
+                              <img
+                                class="card-img-top img-fluid lzl-cached lzl-ed"
+                                src="assets/img/avatar-1.png"
+                                alt="img"
+                              />
+
+                              <div class="author-post">
+                                <h6>Tan Junjie</h6>
+                                <p>Digital Marketer</p>
+                              </div>
+                            </div>
+                            <div class="star-icon px-0">
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                              <i class="fa fa-star"></i>
+                            </div>
+                          </div>
+                          <div class="card-text">
+                            <p>
+                              My company acc was managed by Michaela, with our
+                              promised SEO<br />
+                              keywords delivered on the first few result pages
+                              only after a few months –<br />
+                              better than we expected. There were significant
+                              difference in leads<br />
+                              generated from search engines! Highly recommended!
+                            </p>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+
+                    <div class="owl-item">
+                      <div>
+                        <div class="review-card mb-4">
+                          <div class="card-body">
+                            <div class="review-profile">
+                              <div class="d-flex align-items-center avatar-img">
+                                <img
+                                  class="card-img-top img-fluid lzl-cached lzl-ed"
+                                  src="assets/img/avatar-1.png"
+                                  alt="img"
+                                />
+
+                                <div class="author-post">
+                                  <h6>Tan Junjie</h6>
+                                  <p>Digital Marketer</p>
+                                </div>
+                              </div>
+                              <div class="star-icon px-0">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                              </div>
+                            </div>
+                            <div class="card-text">
+                              <p>
+                                Leo Won has been extremely helpful in the 6
+                                months that he has assisted us.<br />
+                                Thus far, BThrust has delivered on their promise
+                                and our SEO has seen<br />
+                                significant improvement over the course of our
+                                contract.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="review-card">
+                          <div class="card-body">
+                            <div class="review-profile">
+                              <div class="d-flex align-items-center avatar-img">
+                                <img
+                                  class="card-img-top img-fluid lzl-cached lzl-ed"
+                                  src="assets/img/avatar-1.png"
+                                  alt="img"
+                                />
+
+                                <div class="author-post">
+                                  <h6>Tan Junjie</h6>
+                                  <p>Digital Marketer</p>
+                                </div>
+                              </div>
+                              <div class="star-icon px-0">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                              </div>
+                            </div>
+                            <div class="card-text">
+                              <p>
+                                With the service support from Business Thrust.
+                                it allow my company website<br />
+                                to have the better visibility and be found in
+                                all the right places in search<br />
+                                engine environment. We can easily own the
+                                service with low entry cost that<br />
+                                offer by BThrust. Thanks for the BThrust
+                                support.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="owl-item">
+                      <div>
+                        <div class="review-card mb-4">
+                          <div class="card-body">
+                            <div class="review-profile">
+                              <div class="d-flex align-items-center avatar-img">
+                                <img
+                                  class="card-img-top img-fluid lzl-cached lzl-ed"
+                                  src="assets/img/avatar-1.png"
+                                  alt="img"
+                                />
+
+                                <div class="author-post">
+                                  <h6>Tan Junjie</h6>
+                                  <p>Digital Marketer</p>
+                                </div>
+                              </div>
+                              <div class="star-icon px-0">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                              </div>
+                            </div>
+                            <div class="card-text">
+                              <p>
+                                This was my first time working with a SEO
+                                company and during my one year<br />
+                                with BThrust, I would said they are responsive
+                                and professional and most<br />
+                                importantly, they produce the result.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <div class="review-card">
+                          <div class="card-body">
+                            <div class="review-profile">
+                              <div class="d-flex align-items-center avatar-img">
+                                <img
+                                  class="card-img-top img-fluid lzl-cached lzl-ed"
+                                  src="assets/img/avatar-1.png"
+                                  alt="img"
+                                />
+
+                                <div class="author-post">
+                                  <h6>Tan Junjie</h6>
+                                  <p>Digital Marketer</p>
+                                </div>
+                              </div>
+                              <div class="star-icon px-0">
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                                <i class="fa fa-star"></i>
+                              </div>
+                            </div>
+                            <div class="card-text">
+                              <p>
+                                Met up with Leo and signed up for their
+                                promotion for SEO (20 Keywords –<br />
+                                First Page) the next day. It’s been 2 months
+                                since the SEO started and we<br />
+                                already have 14 key words on first page. Would
+                                recommend if you’re looking<br />
+                                for SEO services.
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="col-lg-6 my-auto">
+            <div class="text-center animated-dots">
+              <img
+                src="assets/img/google-rating-img.png"
+                alt="img"
+                class="img-fluid"
+              />
+              <div class="dot-circle1 dot-circle"></div>
+              <div class="dot-circle2 dot-circle"></div>
+              <div class="dot-circle3 dot-circle"></div>
+              <div class="dot-circle4 dot-circle"></div>
+              <div class="dot-circle5 dot-circle"></div>
+              <div class="dot-circle6 dot-circle"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Client Review section -->
+
+    <!-- Book Your Call Now! -->
+
+    <!-- Frequently Asked Questions -->
+
+    <!-- Build Your Next Data-Driven Campaign with Us section -->
+    <section class="right-solution">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6 my-auto">
+            <div class="text-white solution-title text-lg-start text-center">
+              <h2>The Right Solution for Every Business</h2>
+              <p>
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit.
+                Molestie faucibus cras donec consequat urna. Mauris malesu ada
+                viverra nibh convallis.
+              </p>
+              <div class="choose-us-box">
+                <h5 class="fw-bold text-dark text-center mb-4">
+                  Why Choose Us?
+                </h5>
+                <div class="row g-3">
+                  <div class="col-6">
+                    <div class="choose-us-item bg-indigo">
+                      <div class="choose-us-value">2hrs</div>
+                      <div class="choose-us-label">Response Time</div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="choose-us-item bg-green">
+                      <div class="choose-us-value">500+</div>
+                      <div class="choose-us-label">Happy Clients</div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="choose-us-item bg-purple">
+                      <div class="choose-us-value">4.9★</div>
+                      <div class="choose-us-label">Client Rating</div>
+                    </div>
+                  </div>
+                  <div class="col-6">
+                    <div class="choose-us-item bg-yellow">
+                      <div class="choose-us-value">24/7</div>
+                      <div class="choose-us-label">Support</div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="col-lg-6 mt-lg-0 mt-4">
+            <div class="website-analysis-report">
+              <h3>Website analysis report</h3>
+              <p>Lorem ipsum dolor sit amet, consectetur</p>
+              <form action="" class="get-report-form">
+                <div class="mb-3">
+                  <label for="exampleFormControlInput1" class="form-label"
+                    >Your name</label
+                  >
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Your name"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label"
+                    >Your website URL</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Your website URL"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label"
+                    >Your email</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Email"
+                  />
+                </div>
+                <div class="mb-3">
+                  <label for="exampleFormControlTextarea1" class="form-label"
+                    >Your phone number</label
+                  >
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Your phone number"
+                  />
+                </div>
+                <div class="form-check mb-3">
+                  <input
+                    class="form-check-input"
+                    type="checkbox"
+                    value=""
+                    id="flexCheckDefault"
+                  />
+                  <label class="form-check-label" for="flexCheckDefault">
+                    I’m not a raobot
+                  </label>
+                  <img
+                    src="assets/img/robot-icon.png"
+                    class="img-fluid ms-2"
+                    alt="icon"
+                  />
+                </div>
+                <div class="get-report-btn">
+                  <button type="button">Get your report</button>
+                </div>
+              </form>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <section class="py-5 d-none">
+      <div class="container">
+        <div class="form-contact">
+          <div class="row">
+            <div class="col-lg-6 my-auto">
+              <div class="build-campaign">
+                <h2>Build Your Next Data-Driven Campaign with Us</h2>
+                <p>
+                  Contact us for a non-obligatory consultation on how to bring
+                  your business online
+                </p>
+                <ul
+                  class="text-secondary"
+                  style="list-style: none; padding-left: 0"
+                >
+                  <li>
+                    <i class="fas fa-check-circle text-success me-2"></i> SEO &
+                    SEM Strategy
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle text-success me-2"></i> Custom
+                    Web Development
+                  </li>
+                  <li>
+                    <i class="fas fa-check-circle text-success me-2"></i> Social
+                    Media Campaigns
+                  </li>
+                </ul>
+              </div>
+            </div>
+            <div class="col-lg-6">
+              <form action="" class="get-report-form row g-3">
+                <div class="mb-3 col-md-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Your name"
+                  />
+                </div>
+                <div class="mb-3 col-md-6">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Your website URL"
+                  />
+                </div>
+                <div class="mb-3 col-md-6">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Your Email"
+                  />
+                </div>
+                <div class="mb-3 col-md-6">
+                  <input
+                    type="email"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Your phone number"
+                  />
+                </div>
+                <div class="mb-3 col-md-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Project"
+                  />
+                </div>
+                <div class="mb-3 col-md-6">
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="exampleFormControlInput1"
+                    placeholder="Budget"
+                  />
+                </div>
+                <div class="mb-3">
+                  <textarea
+                    class="form-control"
+                    id="exampleFormControlTextarea1"
+                    rows="3"
+                    placeholder="How can we help?"
+                  ></textarea>
+                </div>
+                <div class="get-report-btn">
+                  <button type="button">Send Enquiry</button>
+                </div>
+              </form>
+            </div>
+            <div class="col-lg-6 d-none">
+              <div class="map-bg-square">
+                <iframe
+                  src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d15954.935871021793!2d103.8854514!3d1.3358453!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0x3b4d6706f180d445!2sBusiness%20Thrust%20Pte.%20Ltd.%20(BThrust)!5e0!3m2!1sen!2sus!4v1607056419676!5m2!1sen!2sus"
+                  width="100%"
+                  height="520"
+                  frameborder="0"
+                  style="border: 0"
+                  allowfullscreen=""
+                ></iframe>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- Build Your Next Data-Driven Campaign with Us section -->
+
+    <section class="py-5 excellent-leading-edge d-none">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-8 mx-auto">
+            <div class="text-center text-white">
+              <h2>
+                Let’s Give You an Excellent Leading Edge<br />
+                Over Your Competitors
+              </h2>
+              <p>
+                Our objective is to create a distinct image for your brand and
+                business so that you may stand apart from the crowd and
+                competition. We will exceed all your expectations with our
+                stunning and powerful website design in terms of both style and
+                technology.
+              </p>
+              <div class="read-more white-btn mt-3">
+                <a href="#">Let's Talk</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Footer Section -->
+    <footer class="footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-2 col-sm-6 mb-4">
+            <div class="footer-links">
+              <div class="comany-address bottom-underline">
+                <h5>Singapore</h5>
+                <h6><a href="#">Business Thrust Pte. Ltd.</a></h6>
+              </div>
+
+              <ul class="contact-links">
+                <li>
+                  <i class="fa fa-map-marker-alt" aria-hidden="true"></i
+                  ><span>
+                    10 Ubi Cres, #04-50 <br />Lobby C,Ubi Techpark,
+                    <br />Singapore 408564</span
+                  >
+                </li>
+                <li>
+                  <a href="tel:+6568343026"
+                    ><i
+                      class="fa fa-volume-control-phone"
+                      aria-hidden="true"
+                    ></i
+                    ><span>+65 6834 3026</span></a
+                  >
+                </li>
+                <li>
+                  <a href="mailto:sales@bthrust.com"
+                    ><i class="fa fa-envelope" aria-hidden="true"></i>
+                    <span>sales@bthrust.com</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-6 mb-4">
+            <div class="footer-links">
+              <div class="comany-address bottom-underline">
+                <h5>Malaysia</h5>
+                <h6>
+                  <a target="_blank" href="https://www.bthrust.com.my/"
+                    >Business Thrust Sdn Bhd</a
+                  >
+                </h6>
+              </div>
+              <ul class="contact-links">
+                <li>
+                  <i class="fa fa-map-marker-alt" aria-hidden="true"></i
+                  ><span
+                    >So-28-3 Menara 1,<br />
+                    No. 3 Jalan Bangsar,<br />
+                    KL ECO City, 59200<br />
+                    Kuala Lumpur</span
+                  >
+                </li>
+                <li>
+                  <a href="tel: +60122433001"
+                    ><i
+                      class="fa fa-volume-control-phone"
+                      aria-hidden="true"
+                    ></i
+                    ><span> +60 12243 3001</span></a
+                  >
+                </li>
+                <li>
+                  <a href="mailto:sales@bthrust.com.my"
+                    ><i class="fa fa-envelope" aria-hidden="true"></i>
+                    <span>sales@bthrust.com.my</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-6 mb-4">
+            <div class="footer-links bottom-underline">
+              <h5>Quick Links</h5>
+              <ul>
+                <li>
+                  <a href="index.html"
+                    ><i class="fa fa-chevron-right"></i><span>Home</span></a
+                  >
+                </li>
+                <li>
+                  <a href="about.html"
+                    ><i class="fa fa-chevron-right"></i><span>About Us</span></a
+                  >
+                </li>
+                <li>
+                  <a href="blog.html"
+                    ><i class="fa fa-chevron-right"></i><span>Blogs</span></a
+                  >
+                </li>
+                <li>
+                  <a href="clients.html"
+                    ><i class="fa fa-chevron-right"></i><span>Clients</span></a
+                  >
+                </li>
+                <li>
+                  <a href="contact.html"
+                    ><i class="fa fa-chevron-right"></i
+                    ><span>Contact Us</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-6 mb-4">
+            <div class="footer-links bottom-underline">
+              <h5>SEO Services</h5>
+              <ul>
+                <li>
+                  <a href="seo.html"
+                    ><i class="fa fa-search"></i><span>SEO Singapore</span></a
+                  >
+                </li>
+                <li>
+                  <a href="local-seo.html"
+                    ><i class="fa fa-search"></i><span>Local SEO</span></a
+                  >
+                </li>
+                <li>
+                  <a href="technical-seo.html"
+                    ><i class="fa fa-search"></i
+                    ><span>Technical SEO Services</span></a
+                  >
+                </li>
+                <li>
+                  <a href="e-commerce.html"
+                    ><i class="fa fa-search"></i>
+                    <span> E-commerce SEO</span></a
+                  >
+                </li>
+                <li>
+                  <a href="shopify-seo.html"
+                    ><i class="fa fa-search"></i><span>Shopify SEO</span></a
+                  >
+                </li>
+                <li>
+                  <a href="international-seo.html"
+                    ><i class="fa fa-search"></i
+                    ><span>International SEO</span></a
+                  >
+                </li>
+                <li>
+                  <a href="sem.html"
+                    ><i class="fa fa-search"></i> <span>SEM Services</span></a
+                  >
+                </li>
+                <li>
+                  <a href="social-media-marketng.html"
+                    ><i class="fa fa-search"></i> <span>SMM Services</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-6 mb-4">
+            <div class="footer-links bottom-underline">
+              <h5>Other Services</h5>
+              <ul>
+                <li>
+                  <a href="online-reputation-management.html"
+                    ><i class="fa fa-chevron-right"></i>
+                    <span>ORM Servicess</span></a
+                  >
+                </li>
+
+                <li>
+                  <a href="it-software-devlopment.html"
+                    ><i class="fa fa-chevron-right"></i>
+                    <span>Software Solutions</span></a
+                  >
+                </li>
+                <li>
+                  <a href="web-design.html"
+                    ><i class="fa fa-chevron-right"></i>
+                    <span>Website design</span></a
+                  >
+                </li>
+                <li>
+                  <a href="Fsm-software-sol.html"
+                    ><i class="fa fa-chevron-right"></i> <span> FSM</span></a
+                  >
+                </li>
+                <li>
+                  <a href="mobile-application-development.html"
+                    ><i class="fa fa-chevron-right"></i>
+                    <span> Mobile Application</span></a
+                  >
+                </li>
+                <li>
+                  <a href="document-management-software.html"
+                    ><i class="fa fa-chevron-right"></i>
+                    <span> Document Management</span></a
+                  >
+                </li>
+
+                <li>
+                  <a href="content-marketing.html"
+                    ><i class="fa fa-chevron-right"></i>
+                    <span> Content Marketing</span></a
+                  >
+                </li>
+                <!-- <li>
+                <a href="earn.html"><i class="fa fa-chevron-right"></i> <span>
+                    Refer & Earn</span></a>
+              </li> -->
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-6 mb-4 d-none">
+            <div class="footer-links bottom-underline">
+              <h5>Free Tools</h5>
+
+              <ul>
+                <li>
+                  <a href="seo-roi-calculator.html"
+                    ><i class="fa fa-tools"></i>
+                    <span>SEO ROI Calculator</span></a
+                  >
+                </li>
+                <li>
+                  <a href="ppc-roi-calculator.html"
+                    ><i class="fa fa-tools"></i>
+                    <span>PPC ROI Calculator</span></a
+                  >
+                </li>
+                <li>
+                  <a href="google-serp-simulator.html"
+                    ><i class="fa fa-tools"></i> <span>SERP Simulator</span></a
+                  >
+                </li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-lg-2 col-sm-6 mb-4">
+            <div class="footer-links bottom-underline">
+              <h5>PSG Grant</h5>
+              <div
+                class="bg-gradient-to-r from-yellow-600 to-orange-600 p-2 mb-2"
+              >
+                <p class="text-white mb-0 percent-text">Up to 50% Funding</p>
+                <p class="text-sm text-white mb-0">For eligible businesses</p>
+              </div>
+              <ul>
+                <li>
+                  <a href="digital-marketing-psg.html"
+                    ><i class="fa fa-certificate"></i>
+                    <span>PSG Digital Marketing Solution</span></a
+                  >
+                </li>
+                <!-- <li>
+                <a href="document-management-software-psg.html"><i class="fa fa-chevron-right"></i> <span>PSG GenicDocs
+                    Document Management</span>
+                </a>
+              </li> -->
+                <li>
+                  <a href="project-mangement-software-psg.html"
+                    ><i class="fa fa-certificate"></i>
+                    <span>PSG GenicTeams Project Management Software</span></a
+                  >
+                </li>
+              </ul>
+              <!-- Button in Footer -->
+              <div class="footer-referral d-flex justify-content-center mt-3">
+                <a href="earn.html" class="refer-btn">
+                  <i class="fas fa-gift"></i> Refer & Earn
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- Other Services Row -->
+        <div class="services-section border-top d-none">
+          <h5 class="services-title">Other Services</h5>
+          <div class="row justify-content-center g-3">
+            <div class="col-6 col-md-4 col-lg-2">
+              <a href="Fsm-software-sol.html">
+                <div class="service-card">
+                  <i class="fas fa-user-cog service-icon"></i>
+                  <div class="service-label">FSM</div>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <a href="social-media-marketng.html">
+                <div class="service-card">
+                  <i class="fas fa-share-alt service-icon"></i>
+                  <div class="service-label">Social Media</div>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <a href="mobile-application-development.html">
+                <div class="service-card">
+                  <i class="fas fa-mobile-alt service-icon"></i>
+                  <div class="service-label">Mobile Application</div>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <a href="web-design.html">
+                <div class="service-card">
+                  <i class="fas fa-paint-brush service-icon"></i>
+                  <div class="service-label">Web Design</div>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <a href="email-marketing.html">
+                <div class="service-card">
+                  <i class="fas fa-envelope service-icon"></i>
+                  <div class="service-label">Email Marketing</div>
+                </div>
+              </a>
+            </div>
+            <div class="col-6 col-md-4 col-lg-2">
+              <a href="it-software-devlopment.html">
+                <div class="service-card">
+                  <i class="fas fa-laptop-code service-icon"></i>
+                  <div class="service-label">Software Solutions</div>
+                </div>
+              </a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Certifications & Partners Section -->
+        <div
+          class="mb-5 d-flex gap-3 flex-wrap align-items-center justify-content-between certified-partner certification-container"
+        >
+          <a
+            href="https://www.google.com/partners/agency?id=4578612981"
+            target="_blank"
+            ><img
+              src="assets/img/google-partner2.png"
+              alt="img"
+              class="img-fluid"
+          /></a>
+          <a
+            ><img
+              src="assets/img/aws-logo-imagebg.png"
+              alt="img"
+              class="img-fluid"
+          /></a>
+          <a
+            ><img src="assets/img/certified.png" alt="img" class="img-fluid"
+          /></a>
+          <a><img src="assets/img/gmb.png" alt="img" class="img-fluid" /></a>
+          <a href="https://www.bthrust.com.my/" target="_blank"
+            ><img
+              src="assets/img/svg/my-flag-img.webp"
+              alt="img"
+              class="img-fluid"
+          /></a>
+          <a
+            href="https://topinsingapore.sg/best-seo-companies/"
+            target="_blank"
+            ><img
+              src="assets/img/svg/topinsingapore-badge.webp"
+              alt="img"
+              class="img-fluid"
+          /></a>
+        </div>
+      </div>
+      <div class="container border-top pt-4">
+        <div class="footer-info">
+          <a href="index.html" class="mb-0 d-inline-block footer-logo">
+            <img src="assets/img/logo-white.png" alt="logo" class="img-fluid" />
+          </a>
+          <p>
+            <span class="text-secondary"
+              >@ Copyright 2023. Business Thrust Pte. Ltd. All Rights
+              Resserved.</span
+            >
+            <a href="#">Privacy Policy</a>
+          </p>
+
+          <div class="social-buttons pt-0">
+            <!-- facebook  Button -->
+            <a
+              href="https://www.facebook.com/businessthrust/"
+              target="blank"
+              class="social-margin"
+            >
+              <div class="social-icon facebook mb-0">
+                <i class="fa-brands fa-facebook" aria-hidden="true"></i>
+              </div>
+            </a>
+            <!-- LinkedIn Button -->
+            <a
+              href="https://www.linkedin.com/company/bthrust"
+              class="social-margin"
+              target="blank"
+            >
+              <div class="social-icon linkedin mb-0">
+                <i class="fa-brands fa-linkedin" aria-hidden="true"></i>
+              </div>
+            </a>
+            <!-- TwitterButton -->
+            <a href="#/" target="blank" class="social-margin">
+              <div class="social-icon twitter mb-0">
+                <i class="fa-brands fa-x-twitter"></i>
+              </div>
+            </a>
+          </div>
+        </div>
+      </div>
+    </footer>
+    <!-- <div class="copyright-section">
+   
+  </div> -->
+    <!-- Footer Section -->
+
+    <!-- Floating whatsapp icon -->
+    <div class="whatsapp-btn">
+      <div class="whbtnin">
+        <div
+          class="call-btn-underlay"
+          style="background-color: rgb(43, 149, 105)"
+        ></div>
+        <a
+          class="desk-what js-no-transition"
+          target="_blank"
+          href="https://web.whatsapp.com/send?phone=+6589108216&text=Hi+BThrust,+I+have+an+enquiry+on..."
+        >
+          <img
+            src="https://geniccards.com/wp-content/themes/twentysixteen/assets/img/whatsapp.png"
+            alt="whatsapp-icons"
+          />
+        </a>
+        <a
+          class="mobile-what js-no-transition"
+          target="_blank"
+          href="https://web.whatsapp.com/send?phone=+6589108216&text=Hi+BThrust,+I+have+an+enquiry+on..."
+        >
+          <img
+            src="https://geniccards.com/wp-content/themes/twentysixteen/assets/img/whatsapp.png"
+            alt="whatsapp-icons"
+          />
+        </a>
+      </div>
+    </div>
+
+    <!-- enquiry form -->
+    <div class="sidebar-contact">
+      <div class="toggle"></div>
+      <h3>Quick Enquiry</h3>
+      <p>
+        Drop Us A Line To Know How BThrust Can Turn Your Goals Into Reality.
+        Contact Us For SEO, Custom Software Or Other IT Services We Offer!
+      </p>
+      <div class="scroll">
+        <form>
+          <input type="text" name="" placeholder="Name" />
+          <input type="email" name="" placeholder="Email" />
+          <input type="rel" name="" placeholder="Phone Number" />
+          <input type="text" name="" placeholder="Website" />
+          <select name="" id="cars">
+            <option value="service">Services</option>
+            <option value="seo">Search Engine Optimization</option>
+            <option value="sem">Search Engine Marketing</option>
+            <option value="sd">Software Dovelopment</option>
+          </select>
+          <textarea placeholder="Write Message here.."></textarea>
+          <button class="send-enq">Send Enquiry</button>
+        </form>
+      </div>
+    </div>
+
+    <!-- Back to top button -->
+    <a id="button"></a>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="assets/js/custom.js"></script>
+    <script>
+      $(document).ready(function () {
+        $(".owl-carousel2").owlCarousel({
+          items: 1,
+          autoplay: true,
+          loop: true,
+          nav: false,
+          center: true,
+          margin: 0,
+          responsiveClass: true,
+        });
+
+        // Add active class on initialization
+        $('.btn_0[data-index="0"]').addClass("active");
+
+        // Attach click event to buttons
+        $(".btn_0").on("click", function () {
+          const slideIndex = $(this).data("index");
+          $(".owl-carousel2").trigger("to.owl.carousel", [slideIndex, 300]);
+
+          // Update active button
+          $(".btn_0").removeClass("active");
+          $(this).addClass("active");
+        });
+
+        // Handle Owl Carousel's onChanged event
+        $(".owl-carousel2").on("changed.owl.carousel", function (event) {
+          const currentIndex =
+            event.item.index - event.relatedTarget._clones.length / 2;
+          const totalItems = event.item.count;
+
+          // Ensure index is within bounds
+          const adjustedIndex = (currentIndex + totalItems) % totalItems;
+
+          // Update active button
+          $(".btn_0").removeClass("active");
+          $(`.btn_0[data-index="${adjustedIndex}"]`).addClass("active");
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener("DOMContentLoaded", () => {
+        const counters = document.querySelectorAll(".percentage");
+
+        counters.forEach((counter) => {
+          const target = +counter.getAttribute("data-target"); // Target value
+          const increment = target / 100; // Speed of count
+
+          let count = 0;
+          const updateCount = () => {
+            if (count < target) {
+              count += increment;
+              counter.textContent = `${Math.ceil(count)}%`;
+              requestAnimationFrame(updateCount);
+            } else {
+              counter.textContent = `${target}%`; // Ensure exact value
+            }
+          };
+
+          updateCount();
+        });
+      });
+    </script>
+    <!-- faq script -->
+    <script>
+      function toggleFAQ(element) {
+        const faqItem = element.closest(".faq-item");
+        const answer = faqItem.querySelector(".faq-answer");
+        const isActive = faqItem.classList.contains("active");
+
+        // Close all other FAQ items
+        document.querySelectorAll(".faq-item").forEach((item) => {
+          if (item !== faqItem) {
+            item.classList.remove("active");
+            item.querySelector(".faq-answer").classList.remove("show");
+          }
+        });
+
+        // Toggle current FAQ item
+        if (isActive) {
+          faqItem.classList.remove("active");
+          answer.classList.remove("show");
+        } else {
+          faqItem.classList.add("active");
+          answer.classList.add("show");
+        }
+      }
+
+      // Search functionality
+      document
+        .getElementById("searchInput")
+        .addEventListener("input", function (e) {
+          const searchTerm = e.target.value.toLowerCase();
+          const faqItems = document.querySelectorAll(".faq-item");
+
+          faqItems.forEach((item) => {
+            const question = item
+              .querySelector(".faq-question span")
+              .textContent.toLowerCase();
+            const answer = item
+              .querySelector(".faq-answer p")
+              .textContent.toLowerCase();
+
+            if (question.includes(searchTerm) || answer.includes(searchTerm)) {
+              item.style.display = "block";
+            } else {
+              item.style.display = "none";
+            }
+          });
+        });
+
+      // Category filtering
+      document.querySelectorAll(".category-tab").forEach((tab) => {
+        tab.addEventListener("click", function (e) {
+          e.preventDefault();
+
+          // Update active tab
+          document
+            .querySelectorAll(".category-tab")
+            .forEach((t) => t.classList.remove("active"));
+          this.classList.add("active");
+
+          const category = this.getAttribute("data-category");
+          const faqItems = document.querySelectorAll(".faq-item");
+
+          faqItems.forEach((item) => {
+            if (
+              category === "all" ||
+              item.getAttribute("data-category") === category
+            ) {
+              item.style.display = "block";
+            } else {
+              item.style.display = "none";
+            }
+          });
+
+          // Clear search when switching categories
+          document.getElementById("searchInput").value = "";
+        });
+      });
+
+      // Add smooth scrolling and entrance animations
+      document.addEventListener("DOMContentLoaded", function () {
+        const observerOptions = {
+          threshold: 0.1,
+          rootMargin: "0rem 0rem -3.125rem 0rem",
+        };
+
+        const observer = new IntersectionObserver(function (entries) {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.style.opacity = "1";
+              entry.target.style.transform = "translateY(0)";
+            }
+          });
+        }, observerOptions);
+
+        document.querySelectorAll(".fade-in-up").forEach((el) => {
+          el.style.opacity = "0";
+          el.style.transform = "translateY(1.875rem)";
+          el.style.transition = "all 0.6s ease";
+          observer.observe(el);
+        });
+      });
+    </script>
+    <script>
+      document.addEventListener("scroll", function () {
+        const lines = document.querySelectorAll(".line-progress");
+        const triggerPoint = window.innerHeight / 2; // halfway of the viewport
+
+        lines.forEach((line) => {
+          const rect = line.getBoundingClientRect();
+          if (rect.top < triggerPoint) {
+            line.classList.add("active");
+          } else {
+            line.classList.remove("active");
+          }
+        });
+      });
+    </script>
+  </body>
+</html>
