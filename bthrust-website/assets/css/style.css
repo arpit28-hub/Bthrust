@@ -10265,7 +10265,7 @@ div.item2:nth-of-type(5) {
   min-width: 255px;
   text-align: left;
   padding: 8px 20px;
-  border: 2px solid;
+  /* border: 2px solid; */
 }
 
 .header .nav ul li.dropdown:hover ul {
@@ -10275,7 +10275,7 @@ div.item2:nth-of-type(5) {
 }
 
 .header {
-  border: 2px solid !important;
+  /* border: 2px solid !important; */
   position: relative;
 }
 
