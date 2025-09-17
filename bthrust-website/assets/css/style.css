@@ -9784,7 +9784,7 @@ div.item2:nth-of-type(5) {
   margin: 0 auto;
 }
 .certification-container.certified-partner img {
-  width: 100px;
+  width: 80px;
   transition: transform 0.2s ease;
 }
 .certification-container.certified-partner img:hover {
@@ -10457,6 +10457,7 @@ div.item2:nth-of-type(5) {
 .services-submenu {
   display: none;
   font-weight: 500;
+  /* border: 2px solid red !important; */
 }
 
 .services-submenu.active {
